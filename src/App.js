@@ -13,8 +13,20 @@ import Nigeria from "./WEBMYN NEWS/Football/Nigeria";
 import Politics from "./WEBMYN NEWS/Football/Politics";
 import Technology from "./WEBMYN NEWS/Football/Technology";
 
+import ReactGA from "react-ga" ;
 
-    function App() {
+const TRACKING_ID = "UA-268146908-1"
+ReactGA.initialize(TRACKING_ID)
+
+function App() {
+
+   
+  useEffect( ()=> {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+   }, []);
+  
+
+  
 
      const [data, setData] = useState([ ])
      const [sport, setSport] = useState([])
