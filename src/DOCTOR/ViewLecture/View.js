@@ -25,7 +25,7 @@ function View (props) {
             CourseCode: "CRP 304",
             Link : "View-AEC",
             image  : image1,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-1",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
         {
@@ -33,7 +33,7 @@ function View (props) {
             CourseCode: "CRP 405",
             Link : "View-CPP",
             image  : image2,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-2",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
         {
@@ -41,7 +41,7 @@ function View (props) {
             CourseCode: "CRP 511",
             Link : "View-ANS",
             image  : image3,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-3",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
         {
@@ -49,7 +49,7 @@ function View (props) {
             CourseCode: "CRP 512",
             Link : "View-AEC",
             image  : image1,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-4",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
         {
@@ -57,7 +57,7 @@ function View (props) {
             CourseCode: "CRP 305",
             Link : "View-CPP",
             image  : image2,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-5",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
         {
@@ -65,7 +65,7 @@ function View (props) {
             CourseCode: "CPT 503",
             Link : "View-ANS",
             image  : image3,
-            Topic : " Demand and supply",
+            Topic : " Demand and supply-6",
             Description : "Headings must have content and the content must be accessible by a screen reader",
         },
        ]
