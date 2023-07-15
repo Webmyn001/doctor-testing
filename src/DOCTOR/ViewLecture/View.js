@@ -81,23 +81,27 @@ function View (props) {
                < >
           <div className="bg-[#f5f5f5] w-full min-h-screen">
           <h1 className="font-medium text-center text-indigo-800 pt-4 px-2 text-xl" data-aos="fade-left"> Posted Lectures</h1>
-                    {
-                        UploadList.map((info,i) => (
+          {
+                        LatestList.map((info,i) => (
                             
                           <div  key={i} className="flex items-center justify-center " data-aos="zoom-in">
                             <div>
-                            <button  className="flex flex-col  rounded-lg hover:border-[2px]  duration-500 hover:border-indigo-800 
-                             hover:bg-indigo-800 items-center hover:text-white hover:drop-shadow-[0px_9px_4px_rgba(23,255,120,0.3)] 
-                             justify-cente w-[300px] md:w-[400px] h-[400px] sm:h-[500px] shadow-2xl  my-8 ">
+                            <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
+                              items-center text-indigo-800 
+                             justify-cente w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
                         <Link  to={ {pathname:`/view/${info.Link}`}}  state={info}>
-                                <img src={info.image} alt="Sorry! Not Found" className={`"rounded-lg 
-                              text-2xl h-[300px] shadow-sm  ${info.image_url=== null? "hidden" : "block" } 
-                              sm:w-[400px] md:w-[500px] sm:h-[400px] object-cover w-[200px]"`}/>
-
-                              <div className="  hover:text-white w-full  ">
-                                <h1 className=" font-bold  text-center pt-1  mt-2">  {info.CourseTitle} </h1>
-                               <h1 className="text-xl font-bold text-center pt-2  ">  {info.CourseCode} </h1>
+                              
+                              <div className=" ">
+                                <h1 className=" font-bold  text-center pt-1 mt-2">  {info.CourseTitle} </h1>
+                               <h1 className="text-xl font-bold text-center p-2  ">  {info.CourseCode} </h1>
                               </div>
+       <div className='text-center'>
+                <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
+                <h3 className='font-mono pb-3 pt-2'>View</h3>
+        </div>                 
+               
+
+
                          </Link>
                             </button>
                             </div>
