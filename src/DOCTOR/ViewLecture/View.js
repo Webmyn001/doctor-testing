@@ -82,7 +82,7 @@ function View (props) {
           <div className="bg-[#f5f5f5] w-full min-h-screen">
           <h1 className="font-medium text-center text-indigo-800 pt-4 px-2 text-xl" data-aos="fade-left"> Posted Lectures</h1>
           {
-                        LatestList.map((info,i) => (
+                        UploadList.map((info,i) => (
                             
                           <div  key={i} className="flex items-center justify-center " data-aos="zoom-in">
                             <div>
