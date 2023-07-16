@@ -3,7 +3,7 @@ import Button from './Button'
 
 import {Link, useLocation} from "react-router-dom"
 
-function UploadAEC() {
+function UploadLecture() {
 
     const location = useLocation()
      const data = location.state
@@ -12,7 +12,7 @@ function UploadAEC() {
 
   return (
     <div className='min-h-screen bg-[#f5f5f5]'>
-        <h1 className='font-bold text-center text-indigo-800 text-xl pt-6'>Upload New Lecture</h1>
+        <h1 className='font-bold text-center w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
         <div className='flex bg-indigo-800 justify-center items-center'>
           <div className='flex flex-col shadow-lg w-[311px] h-[445px] border-2 border-indigo-800 bg-white absolute top-[160px] items-center rounded-[32px]'>
        
@@ -50,4 +50,4 @@ function UploadAEC() {
   )
 }
 
-export default UploadAEC
+export default UploadLecture
