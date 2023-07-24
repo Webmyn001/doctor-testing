@@ -15,7 +15,7 @@ import {Link, useLocation} from "react-router-dom"
 
 
 
-function View (props) {
+function ViewCrp304 (props) {
 
 
     const location = useLocation()
@@ -109,4 +109,4 @@ function View (props) {
               );
                    }
 
-     export default View;
+     export default ViewCrp304;

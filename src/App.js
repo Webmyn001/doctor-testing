@@ -4,17 +4,22 @@ import {BrowserRouter as Router ,Route, Routes, } from "react-router-dom"
 import Navbar from './DOCTOR/header/Navbar'
 import Home from './DOCTOR/HomePage/Home'
 import Upload from './DOCTOR/Uploads/Upload'
-import UploadAEC from './DOCTOR/Uploads/UploadLecture'
 import LectureDetails from './DOCTOR/ViewLecture/LectureDetails'
 import ViewHome from './DOCTOR/ViewLecture/VeiwHome'
-import View from './DOCTOR/ViewLecture/View'
 
 import image1 from "./DOCTOR/Images/genetics.jpg"
 import image2 from "./DOCTOR/Images/image2.jpg"
 import image3 from "./DOCTOR/Images/image3.jpg"
 
 import file from "./DOCTOR/Pdffiles/Introduction to agric.pdf"
-import UploadLecture from './DOCTOR/Uploads/UploadLecture'
+import ViewCrp304 from './DOCTOR/ViewLecture/ViewCrp304'
+    //Upload  Lecture
+import UploadLectureCrp304 from './DOCTOR/Uploads/UploadLectureCrp304'
+import UploadLectureCrp511 from './DOCTOR/Uploads/UploadLectureCrp511'
+import UploadLectureCrp405 from './DOCTOR/Uploads/UploadLectureCrp405'
+import UploadLectureCrp305 from './DOCTOR/Uploads/UploadLectureCrp305'
+import UploadLectureCrp512 from './DOCTOR/Uploads/UploadLectureCrp512'
+import UploadLectureCpt503 from './DOCTOR/Uploads/UploadLectureCpt503'
 
 
 function App() {
@@ -380,11 +385,19 @@ const ListCPT503  = [
                <Route path = "/" exact element= {<Home/>}></Route>
                {/* Upload Lecture Routes */}
                <Route path = "/Upload" exact element= {<Upload/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLecture/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCrp304/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCrp305/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCrp405/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCrp511/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCpt503/>}></Route>
+               <Route path = "/upload/:id" exact element= {<UploadLectureCrp512/>}></Route>
+               
+
+
                {/* View lecture */}
                <Route path = "/view" exact element= {<ViewHome/>}></Route>
                <Route path = "/view/:id" exact element= {
-               <View 
+               <ViewCrp304 
                LectureListCPT503={LectureListCPT503} 
                LectureListCRP304={LectureListCRP304}
                LectureListCRP305={LectureListCRP305} 
@@ -392,7 +405,7 @@ const ListCPT503  = [
                LectureListCRP511={LectureListCRP511} 
                LectureListCRP512={LectureListCRP512}
                /> }>
-
+               <Route path = "/view" exact element= {<ViewHome/>}></Route>
                </Route>
                <Route path = "/lecturedetails/:id" exact element= {<LectureDetails/>}></Route>
 

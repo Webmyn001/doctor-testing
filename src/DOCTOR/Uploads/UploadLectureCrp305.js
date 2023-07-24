@@ -3,7 +3,7 @@ import Button from './Button'
 
 import {Link, useLocation, useNavigate} from "react-router-dom"
 import axios from "axios"
-function UploadLecture() {
+function UploadLectureCrp305() {
 
     const location = useLocation()
      const data = location.state
@@ -19,7 +19,7 @@ function UploadLecture() {
      const saveForm = async (e) => {
       e.preventDefault();
        
-       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/crp304/add", {Topic,Description,document})
+       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/crp305/add", {Topic,Description,document})
       .then((res)=>
       { 
       console.log("saved succesfully")
@@ -37,7 +37,7 @@ function UploadLecture() {
     const Onchangeimages = async (e) => { 
       const files = Array.from(e.target.files)
           
-    if (e.target.files.length > 1 ) {
+    if (e.target.files.length === 0 ) {
      setdocument(null)
       alert("please select only 1 images")
       }else{
@@ -92,7 +92,7 @@ function UploadLecture() {
           <textarea placeholder='Description'  value={Description} onChange={OnchangeDescription}
           className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600 text-indigo-700 mt-[24px]'/>
 
-          <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload pdf/word document only below</h3>
+          <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 15mb)</h3>
 
           <input  type="file"  name='document' onChange={Onchangeimages}
           className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]'/>
@@ -113,4 +113,4 @@ function UploadLecture() {
   )
 }
 
-export default UploadLecture
+export default UploadLectureCrp305

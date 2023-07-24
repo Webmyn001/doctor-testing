@@ -23,7 +23,7 @@ function Upload (props) {
         {
             CourseTitle : "Plant Pathology ",
             CourseCode: "CRP 304",
-            Link : "View-AEC",
+            Link : "Upload-304",
             image  : image1,
             Topic : " Demand and supply-1",
             Description : "Headings must have content and the content must be accessible by a screen reader",
@@ -31,7 +31,7 @@ function Upload (props) {
         {
             CourseTitle : "Crop Protection and Disease Control",
             CourseCode: "CRP 405",
-            Link : "View-CPP",
+            Link : "Upload-405",
             image  : image2,
             Topic : " Demand and supply-2",
             Description : "Headings must have content and the content must be accessible by a screen reader",
@@ -39,7 +39,7 @@ function Upload (props) {
         {
             CourseTitle : "Soil Borne and Root Diseases ",
             CourseCode: "CRP 511",
-            Link : "View-ANS",
+            Link : "Upload-511",
             image  : image3,
             Topic : " Demand and supply-3",
             Description : "Headings must have content and the content must be accessible by a screen reader",
@@ -47,7 +47,7 @@ function Upload (props) {
         {
             CourseTitle : " Plant Disease Control",
             CourseCode: "CRP 512",
-            Link : "View-AEC",
+            Link : "Upload-512",
             image  : image1,
             Topic : " Demand and supply-4",
             Description : "Headings must have content and the content must be accessible by a screen reader",
@@ -55,7 +55,7 @@ function Upload (props) {
         {
             CourseTitle : "Pests and Microorganisms in Agriculture",
             CourseCode: "CRP 305",
-            Link : "View-CPP",
+            Link : "Upload-305",
             image  : image2,
             Topic : " Demand and supply-5",
             Description : "Headings must have content and the content must be accessible by a screen reader",
@@ -63,7 +63,7 @@ function Upload (props) {
         {
             CourseTitle : "Principles of Nematology",
             CourseCode: "CPT 503",
-            Link : "View-ANS",
+            Link : "Upload-503",
             image  : image3,
             Topic : " Demand and supply-6",
             Description : "Headings must have content and the content must be accessible by a screen reader",
