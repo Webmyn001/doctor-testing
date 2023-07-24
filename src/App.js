@@ -405,7 +405,6 @@ const ListCPT503  = [
                LectureListCRP511={LectureListCRP511} 
                LectureListCRP512={LectureListCRP512}
                /> }>
-               <Route path = "/view" exact element= {<ViewHome/>}></Route>
                </Route>
                <Route path = "/lecturedetails/:id" exact element= {<LectureDetails/>}></Route>
 
