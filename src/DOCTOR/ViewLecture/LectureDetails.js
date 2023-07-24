@@ -23,7 +23,7 @@ function UploadAEC() {
     <div className='min-h-screen bg-[#f5f5f5]'>
         <h1 className=' text-center font-bold w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
         <div className='flex bg-indigo-800 justify-center items-center'>
-          <div className='flex flex-col shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white absolute top-[160px] items-center rounded-[32px]'>
+          <div className='flex flex-col shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white  absolute top-[160px] items-center rounded-[32px]'>
        
        
         {/*  */}

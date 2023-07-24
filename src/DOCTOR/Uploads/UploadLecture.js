@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
 
-import {Link, useLocation} from "react-router-dom"
-
+import {Link, useLocation, useNavigate} from "react-router-dom"
+import axios from "axios"
 function UploadLecture() {
 
     const location = useLocation()
@@ -10,6 +10,63 @@ function UploadLecture() {
      
      console.log(data)
 
+     const navigate = useNavigate();
+
+     const [Topic, setTopic] = useState("")
+     const [Description, setDescription] = useState("")
+     const [document, setdocument] = useState("")
+
+     const saveForm = async (e) => {
+      e.preventDefault();
+       
+       axios.post("https://defiant-lime-tweed-jacket.cyclic.app/api/crp304/add", {Topic,Description,document})
+      .then((res)=>
+      { 
+      console.log("saved succesfully")
+      navigate("/");
+      alert("form submitted succesfully")
+    }).catch((err)=> {
+        console.log(err)
+        alert("Unable to submit form, kindly complete the form")
+      })
+      
+      
+    }
+    
+
+    const Onchangeimages = async (e) => { 
+      const files = Array.from(e.target.files)
+          
+    if (e.target.files.length > 1 ) {
+     setdocument(null)
+      alert("please select only 1 images")
+      }else{
+           setdocument([]);
+           files.forEach(file => {
+    
+               const reader = new FileReader();
+    
+               reader.onload = () => {
+                   if (reader.readyState === 2) {
+                       setdocument(oldArray => [...oldArray, reader.result]);
+                       
+                   }
+               }
+    
+               reader.readAsDataURL(file)
+    
+           })
+      }
+    }
+
+    const OnchangeTopic =(e)=> {
+      setTopic(e.target.value)
+    }
+
+    const OnchangeDescription =(e)=> {
+      setDescription(e.target.value)
+    }
+  console.log(Topic,Description,document)
   return (
     <div className='min-h-screen bg-[#f5f5f5]'>
         <h1 className='font-bold text-center w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
@@ -27,12 +84,18 @@ function UploadLecture() {
         
          {/*  form */}
          <div className=''>
-         <form className='w-[220px] mt-[60.5px]'>
+         <form className='w-[220px] mt-[60.5px]' onSubmit={saveForm} encType="multipart/form-data">
 
-          <input placeholder='Topic or Title'  className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px] border-indigo-600 text-indigo-700 '/>
-          <textarea placeholder='Description' className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600 text-indigo-700 mt-[24px]'/>
+          <input placeholder='Topic or Title'  value={Topic} onChange={OnchangeTopic} 
+          className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px] border-indigo-600 text-indigo-700 '/>
+
+          <textarea placeholder='Description'  value={Description} onChange={OnchangeDescription}
+          className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600 text-indigo-700 mt-[24px]'/>
+
           <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload pdf/word document only below</h3>
-          <input  type="file" className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]'/>
+
+          <input  type="file"  name='document' onChange={Onchangeimages}
+          className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]'/>
 
       
                {/* Upload button */}
