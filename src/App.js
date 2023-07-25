@@ -385,12 +385,12 @@ const ListCPT503  = [
                <Route path = "/" exact element= {<Home/>}></Route>
                {/* Upload Lecture Routes */}
                <Route path = "/Upload" exact element= {<Upload/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCrp304/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCrp305/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCrp405/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCrp511/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCpt503/>}></Route>
-               <Route path = "/upload/:id" exact element= {<UploadLectureCrp512/>}></Route>
+               <Route path = "/upload/Upload-304" exact element= {<UploadLectureCrp304/>}></Route>
+               <Route path = "/upload/Upload-305" exact element= {<UploadLectureCrp305/>}></Route>
+               <Route path = "/upload/Upload-405" exact element= {<UploadLectureCrp405/>}></Route>
+               <Route path = "/upload/Upload-511" exact element= {<UploadLectureCrp511/>}></Route>
+               <Route path = "/upload/Upload-503" exact element= {<UploadLectureCpt503/>}></Route>
+               <Route path = "/upload/Upload-512" exact element= {<UploadLectureCrp512/>}></Route>
                
 
 
