@@ -16,17 +16,16 @@ import {ThreeDots} from "react-loader-spinner"
 
 
 
-function ViewCrp304 (props) {
+function ViewCrp305 (props) {
 
 
     const location = useLocation()
      const data = location.state
      
-    console.log(props.LectureListCRP304)
+    console.log(props.LectureList1)
                 
-     const ArrayList = props.LectureListCRP304
-     
-     console.log(data)
+    const ArrayList = props.LectureListCRP305     
+
 
            
 
@@ -43,10 +42,7 @@ function ViewCrp304 (props) {
                < >
           <div className="bg-[#f5f5f5] w-full min-h-screen">
           <h1 className="text-center font-bold text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
-          
           {console.log(props)}
-
-
           {props.loading ?<div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold">loading<ThreeDots height="80" width="80" radius="9" color="blue" ariaLabel="loading"/></div>}
           { ArrayList.length === 0 ? 
           <div className={`min-h-screen text-gray-900 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}>There is No Lecture Available</div>  :
@@ -85,4 +81,4 @@ function ViewCrp304 (props) {
               );
                    }
 
-     export default ViewCrp304;
+     export default ViewCrp305;

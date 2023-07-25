@@ -45,8 +45,8 @@ function UploadAEC() {
              {/* View file= pdf/word and download*/}
 
              <div className='flex justify-between mt-[15px] items-center'>
-                <a className='text-xs  text-indigo-800' href={file} ><span className='flex gap-x-1 justify-center text-xs items-center'><FaBookOpen/>Preview</span></a>
-                <a href={file} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download<BiDownload/></span></a>
+
+        <a href={file} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
                 
              </div>
 

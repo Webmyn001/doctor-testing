@@ -23,7 +23,7 @@ function ViewHome (props) {
         {
             CourseTitle : "Plant Pathology ",
             CourseCode: "CRP 304",
-            Link : "View-AEC",
+            Link : "View-304",
             image  : image1,
             ID: 1
            
@@ -31,35 +31,35 @@ function ViewHome (props) {
         {
             CourseTitle : "Crop Protection and Disease Control",
             CourseCode: "CRP 405",
-            Link : "View-CPP",
+            Link : "View-405",
             image  : image2,
             ID: 2
         },
         {
             CourseTitle : "Soil Borne and Root Diseases ",
             CourseCode: "CRP 511",
-            Link : "View-ANS",
+            Link : "View-511",
             image  : image3,
             ID: 3
         },
         {
             CourseTitle : " Plant Disease Control",
             CourseCode: "CRP 512",
-            Link : "View-AEC",
+            Link : "View-512",
             image  : image1,
             ID: 4
         },
         {
             CourseTitle : "Pests and Microorganisms in Agriculture",
             CourseCode: "CRP 305",
-            Link : "View-CPP",
+            Link : "View-305",
             image  : image2,
             ID: 5
         },
         {
             CourseTitle : "Principles of Nematology",
             CourseCode: "CPT 503",
-            Link : "View-ANS",
+            Link : "View-503",
             image  : image3,
             ID: 6
         },
