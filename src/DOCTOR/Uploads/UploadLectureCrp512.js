@@ -38,9 +38,10 @@ function UploadLectureCrp512() {
       const files = Array.from(e.target.files)
         console.log(e.target.files.length)  
     if (e.target.files.length < 1 ) {
+      alert("please select only 1 document")
      setdocument(null)
-      alert("please select only 1 images")
-      }else{
+      }
+      else{
            setdocument([]);
            files.forEach(file => {
     
@@ -95,7 +96,7 @@ function UploadLectureCrp512() {
           <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 15mb)</h3>
 
           <input  type="file"  name='document' onChange={Onchangeimages}
-          className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]'/>
+          className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]' required/>
 
       
                {/* Upload button */}
