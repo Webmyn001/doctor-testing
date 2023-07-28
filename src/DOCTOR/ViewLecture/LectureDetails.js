@@ -15,7 +15,7 @@ function UploadAEC() {
     const location = useLocation()
      const data = location.state
      
-     console.log(data)
+     console.log(data.document[0].url)
 
      const navigate = useNavigate();
 
@@ -27,7 +27,7 @@ function UploadAEC() {
   // i want to do yes or no alert here
   alert("This lecture will be deleted")
   try{
-    await axios.delete(`https://gold-busy-beaver.cyclic.app/api/${data.Code}/${id}`);
+    await axios.delete(`https://defiant-lime-tweed-jacket.cyclic.app/api/${data.Code}/${id}`);
     alert("Data deleted.")
     navigate("/");
       }catch (err) 
@@ -63,7 +63,7 @@ function UploadAEC() {
 
              <div className='flex justify-between mt-[15px] items-center'>
 
-        <a href={data.document} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
+        <a href={data.document[0].url} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
                 
              </div>
 

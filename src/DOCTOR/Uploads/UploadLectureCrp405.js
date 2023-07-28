@@ -36,7 +36,7 @@ function UploadLectureCrp405() {
 
     const Onchangeimages = async (e) => { 
       const files = Array.from(e.target.files)
-          
+      console.log(e.target.files.length)  
     if (e.target.files.length === 0 ) {
      setdocument(null)
       alert("please select only 1 images")
@@ -99,7 +99,7 @@ function UploadLectureCrp405() {
 
       
                {/* Upload button */}
-               <div className='flex justify-center items-center'>
+               <div className='flex justify-center mb-2 items-center'>
              <Button name="Upload"/>
                </div>
             </form>
