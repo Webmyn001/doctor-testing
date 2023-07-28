@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Button from './Button'
 
-import {Link, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 import file from "../Pdffiles/Demand and Supply.pdf"
 import {BiDownload} from "react-icons/bi"
 import {FaBookOpen} from "react-icons/fa"
+import axios from 'axios'
+import Footer from '../Footer/Footer'
 
 
 
@@ -15,15 +17,30 @@ function UploadAEC() {
      
      console.log(data)
 
+     const navigate = useNavigate();
+
  const HandleSubmit = (e) => {
   e.preventDefault();
  }
 
+ const deleteUser = async (id) => {
+  // i want to do yes or no alert here
+  alert("This lecture will be deleted")
+  try{
+    await axios.delete(`https://gold-busy-beaver.cyclic.app/api/${data.Code}/${id}`);
+    alert("Data deleted.")
+    navigate("/");
+      }catch (err) 
+  {
+  console.log(err);
+  alert("Unable to delete, Kindly ensure you are connectecd to the internet")
+   }
+}
   return (
-    <div className='min-h-screen bg-[#f5f5f5]'>
+    <div className=' bg-[#f5f5f5]'>
         <h1 className=' text-center font-bold w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
-        <div className='flex bg-indigo-800 justify-center items-center'>
-          <div className='flex flex-col shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white  absolute top-[160px] items-center rounded-[32px]'>
+        <div className='flex min-h-screen justify-center items-center'>
+          <div className='flex flex-col  shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white   items-center rounded-[32px]'>
        
        
         {/*  */}
@@ -46,7 +63,7 @@ function UploadAEC() {
 
              <div className='flex justify-between mt-[15px] items-center'>
 
-        <a href={file} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
+        <a href={data.document} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
                 
              </div>
 
@@ -54,16 +71,16 @@ function UploadAEC() {
       
                {/* Delete button */}
                <div className='flex justify-between  my-[15px]  mb-[15px] items-center'>
-               <Link to="/">
+               <Link to="/view">
                 
              <button className='p-[3px] bg-indigo-800 hover:text-indigo-800 duration-300 transition-colors hover:border-[0.5px] border-indigo-800 hover:bg-white  rounded-lg'>Back</button>
                </Link>
-             <button  className='p-[3px] bg-indigo-800 duration-300 transition-colors hover:text-indigo-800 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
+             <button onClick={()=>deleteUser(data._id)} className='p-[3px] bg-indigo-800 duration-300 transition-colors hover:text-indigo-800 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
                </div>
             </form>
          </div>
 
-
+         
          
            </div>
        </div>

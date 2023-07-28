@@ -25,7 +25,7 @@ function ViewHome (props) {
             CourseCode: "CRP 304",
             Link : "View-304",
             image  : image1,
-            ID: 1
+            code: "crp304"
            
         },
         {
@@ -33,35 +33,35 @@ function ViewHome (props) {
             CourseCode: "CRP 405",
             Link : "View-405",
             image  : image2,
-            ID: 2
+            code: "crp405"
         },
         {
             CourseTitle : "Soil Borne and Root Diseases ",
             CourseCode: "CRP 511",
             Link : "View-511",
             image  : image3,
-            ID: 3
+            code: "crp511"
         },
         {
             CourseTitle : " Plant Disease Control",
             CourseCode: "CRP 512",
             Link : "View-512",
             image  : image1,
-            ID: 4
+            code: "crp512"
         },
         {
             CourseTitle : "Pests and Microorganisms in Agriculture",
             CourseCode: "CRP 305",
             Link : "View-305",
             image  : image2,
-            ID: 5
+            code: "crp305"
         },
         {
             CourseTitle : "Principles of Nematology",
             CourseCode: "CPT 503",
             Link : "View-503",
             image  : image3,
-            ID: 6
+            code: "cpt503"
         },
        ]
     useEffect(()=> {

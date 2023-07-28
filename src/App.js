@@ -381,7 +381,7 @@ const ListCPT503  = [
      }
        
      const getLectureCRP511 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/cpr511/")
+      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp511/")
       .then(res => {
         console.log(res.data)
         setLectureListCRP511(res.data)
@@ -453,7 +453,18 @@ const ListCPT503  = [
             <Navbar/>
        
          <Routes>
-               <Route path = "/" exact element= {<Home/>}></Route>
+
+           {/* Home Page Routes */}
+               <Route path = "/" exact element= {
+               <Home LectureListCRP304={LectureListCRP304} 
+               loading={loading} 
+               LectureListCRP305={LectureListCRP305}
+               LectureListCRP405={LectureListCRP405} 
+               LectureListCRP511={LectureListCRP511} 
+               LectureListCRP512={LectureListCRP512}
+               LectureListCPT503={LectureListCPT503} />}> 
+               </Route>
+
                {/* Upload Lecture Routes */}
                <Route path = "/Upload" exact element= {<Upload/>}></Route>
                <Route path = "/upload/Upload-304" exact element= {<UploadLectureCrp304/>}></Route>
