@@ -37,10 +37,11 @@ function UploadLectureCrp405() {
     const Onchangeimages = async (e) => { 
       const files = Array.from(e.target.files)
       console.log(e.target.files.length)  
-    if (e.target.files.length === 0 ) {
+    if (e.target.files.length < 1  ) {
      setdocument(null)
       alert("please select only 1 images")
-      }else{
+      }
+      else{
            setdocument([]);
            files.forEach(file => {
     
