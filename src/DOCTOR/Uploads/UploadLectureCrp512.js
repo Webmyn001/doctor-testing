@@ -40,8 +40,8 @@ function UploadLectureCrp512() {
     if (e.target.files.length < 1 ) {
      setdocument(null)
       alert("please select only 1 images")
-      }
-      else{
+      }else{
+           setdocument([]);
            files.forEach(file => {
     
                const reader = new FileReader();
