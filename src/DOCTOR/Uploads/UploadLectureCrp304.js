@@ -24,7 +24,9 @@ function UploadLectureCrp304() {
       { 
       console.log("saved succesfully")
       navigate("/");
-      alert("form submitted succesfully")
+      window.location.reload() 
+
+      alert("Uploaded succesfully!")
     }).catch((err)=> {
         console.log(err)
         alert("Unable to submit form, kindly complete the form")

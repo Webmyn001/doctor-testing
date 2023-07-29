@@ -50,7 +50,7 @@ function ViewCrp512 (props) {
           { ArrayList.length === 0 ? 
           <div className={`min-h-screen text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}>No Lecture Available</div>  :
                   ArrayList.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-screen justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 

@@ -240,11 +240,11 @@ const ListCPT503  = [
           { LatestListCRP304.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}>No Lecture Available</div>  :
                   LatestListCRP304.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
-                             justify-cente w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
+                             justify-center w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
                         <Link  to={ {pathname:`/lecturedetails/${info._id}`}}  state={info}>
                               
                               <div className=" ">
@@ -273,11 +273,11 @@ const ListCPT503  = [
           { LatestListCRP405.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
                   LatestListCRP405.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
-                             justify-cente w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
+                             justify-center w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
                         <Link  to={ {pathname:`/lecturedetails/${info._id}`}}  state={info}>
                               
                               <div className=" ">
@@ -306,7 +306,7 @@ const ListCPT503  = [
           { LatestListCRP511.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
                   LatestListCRP511.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
@@ -339,7 +339,7 @@ const ListCPT503  = [
           { LatestListCRP512.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
                   LatestListCRP512.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
@@ -371,7 +371,7 @@ const ListCPT503  = [
           { LatestListCRP305.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
                   LatestListCRP305.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
@@ -402,7 +402,7 @@ const ListCPT503  = [
           { LatestListCPT503.length === 0 ? 
           <div className={`min-h-[400px] text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
                   LatestListCPT503.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} min-h-[400px] justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 

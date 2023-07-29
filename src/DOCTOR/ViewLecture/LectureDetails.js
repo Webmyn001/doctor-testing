@@ -30,6 +30,7 @@ function UploadAEC() {
     await axios.delete(`https://defiant-lime-tweed-jacket.cyclic.app/api/${data.Code}/${id}`);
     alert("Data deleted.")
     navigate("/");
+    window.location.reload()
       }catch (err) 
   {
   console.log(err);
