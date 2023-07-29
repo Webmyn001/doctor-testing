@@ -74,9 +74,9 @@ function UploadAEC() {
                <div className='flex justify-between  my-[15px]  mb-[15px] items-center'>
                <Link to="/view">
                 
-             <button className='p-[3px] bg-indigo-800 hover:text-indigo-800 duration-300 transition-colors hover:border-[0.5px] border-indigo-800 hover:bg-white  rounded-lg'>Back</button>
+             <button className='p-[3px] bg-indigo-800 hover:text-indigo-800 duration-300 transition-colors focus:outline-0 hover:border-[0.5px] border-indigo-800 hover:bg-white  rounded-lg'>Back</button>
                </Link>
-             <button onClick={()=>deleteUser(data._id)} className='p-[3px] bg-indigo-800 duration-300 transition-colors hover:text-indigo-800 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
+             <button onClick={()=>deleteUser(data._id)} className='p-[3px] bg-indigo-800 duration-300 transition-colors focus:outline-0 hover:text-indigo-800 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
                </div>
             </form>
          </div>
