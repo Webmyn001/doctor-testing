@@ -1,14 +1,11 @@
 
 
-import {React,useEffect, useState} from "react";
-import image1 from "../Images/genetics.jpg"
-import image2 from "../Images/image2.jpg"
-import image3 from "../Images/image3.jpg"
+import {React,useEffect, } from "react";
+
 
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../Footer/Footer";
 import {Link, useLocation} from "react-router-dom"
 import {ThreeDots} from "react-loader-spinner"
 
@@ -42,7 +39,7 @@ function ViewCrp304 (props) {
        return (
                < >
           <div className="bg-[#f5f5f5] w-full min-h-screen">
-          <h1 className="text-center font-bold text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
+          <h1 className="text-center font-bold text-white bg-gradient-to-r from-indigo-800 to-cyan-600" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
           
           {console.log(props)}
 
@@ -77,7 +74,6 @@ function ViewCrp304 (props) {
                     }
 
 
-                   <Footer/> 
                     
                </div>  
                 

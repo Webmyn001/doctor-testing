@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-import Button from './Button'
+import React from 'react'
 
 import {Link, useLocation, useNavigate} from "react-router-dom"
-import file from "../Pdffiles/Demand and Supply.pdf"
 import {BiDownload} from "react-icons/bi"
-import {FaBookOpen} from "react-icons/fa"
 import axios from 'axios'
-import Footer from '../Footer/Footer'
 
 
 
@@ -38,8 +34,8 @@ function UploadAEC() {
    }
 }
   return (
-    <div className=' bg-[#f5f5f5]'>
-        <h1 className=' text-center font-bold w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
+    <div className='min-h-screen bg-[#f5f5f5]'>
+        <h1 className=' text-center font-bold w-full pb-1 text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
         <div className='flex min-h-screen justify-center items-center'>
           <div className='flex flex-col  shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white   items-center rounded-[32px]'>
        

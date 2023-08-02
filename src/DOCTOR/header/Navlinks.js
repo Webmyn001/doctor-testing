@@ -14,6 +14,9 @@ import {Link} from "react-router-dom";
         {name: "View Lectures",
          link : "/view"
         },
+        {name: "X",
+         link : "/home"
+        },
         
         
         

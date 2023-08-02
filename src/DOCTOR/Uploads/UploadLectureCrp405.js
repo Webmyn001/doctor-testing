@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from './Button'
 
-import {Link, useLocation, useNavigate} from "react-router-dom"
+import { useLocation, useNavigate} from "react-router-dom"
 import axios from "axios"
 function UploadLectureCrp405() {
 
@@ -71,8 +71,8 @@ function UploadLectureCrp405() {
     }
   console.log(Topic,Description,document)
   return (
-    <div className='min-h-screen bg-[#f5f5f5]'>
-        <h1 className='font-bold text-center w-full pb-1 text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
+    <div className='min-h-screen sm:min-h-[900px] bg-[#f5f5f5]'>
+        <h1 className='font-bold text-center w-full pb-1 text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
         <div className='flex bg-indigo-800 justify-center items-center'>
           <div className='flex flex-col shadow-lg w-[311px] h-[445px] border-2 border-indigo-800 bg-white absolute top-[160px] items-center rounded-[32px]'>
        

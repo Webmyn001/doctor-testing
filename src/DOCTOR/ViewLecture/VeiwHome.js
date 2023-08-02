@@ -1,6 +1,6 @@
 
 
-import {React,useEffect, useState} from "react";
+import {React,useEffect, } from "react";
 import {Link} from "react-router-dom";
 import image1 from "../Images/genetics.jpg"
 import image2 from "../Images/image2.jpg"
@@ -9,7 +9,6 @@ import image3 from "../Images/image3.jpg"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../Footer/Footer";
 
 
 
@@ -72,15 +71,15 @@ function ViewHome (props) {
        return (
                < >
           <div className="bg-[#f5f5f5] w-full min-h-screen">
-          <h1 className="text-center font-bold text-gray-900 bg-gradient-to-r from-indigo-800 to-cyan-600 " data-aos="fade-left"> View Lectures</h1>
+          <h1 className="text-center font-bold text-white bg-gradient-to-r from-indigo-800 to-cyan-600 " data-aos="fade-left"> View Lectures</h1>
                     {
                         ViewList.map((info,i) => (
                             
                           <div  key={i} className="flex items-center justify-center " data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px]  duration-500 hover:border-indigo-800 
-                             hover:bg-indigo-800 items-center hover:text-white hover:drop-shadow-[0px_9px_4px_rgba(23,255,120,0.3)] 
-                             justify-cente w-[300px] md:w-[400px] h-[400px] sm:h-[500px] shadow-2xl  my-8 ">
+                             hover:bg-indigo-800 items-center text-indigo-800 hover:text-white hover:drop-shadow-[0px_9px_4px_rgba(23,255,120,0.3)] 
+                             justify-center w-[300px] md:w-[400px] h-[400px] sm:h-[500px] shadow-2xl  my-8 ">
                         <Link  to={ {pathname:`/view/${info.Link}`}}  state={info}>
                                 <img src={info.image} alt="Sorry! Not Found" className={`"rounded-lg 
                               text-2xl h-[300px] shadow-sm  ${info.image_url=== null? "hidden" : "block" } 
@@ -97,7 +96,6 @@ function ViewHome (props) {
                         ))
                     }
 
-                   <Footer/> 
                     
                </div>  
                 
