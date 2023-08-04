@@ -38,17 +38,16 @@ function ViewCrp304 (props) {
 
        return (
                < >
-          <div className="bg-[#f5f5f5] w-full min-h-screen">
-          <h1 className="text-center font-bold text-white bg-gradient-to-r from-indigo-800 to-cyan-600" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
-          
-          {console.log(props)}
+          <div className="bg-[#f5f5f5] w-full  min-h-screen">
+          <h1 className="text-center font-bold text-white bg-gradient-to-r font-montserat from-indigo-800 to-cyan-600" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
 
-
-          {props.loading ?<div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold">loading<ThreeDots height="80" width="80" radius="9" color="blue" ariaLabel="loading"/></div>}
+           {/* show loader */}
+             {console.log(props)}
+           {props.loading ?<div></div>:<div className="flex min-h-screen justify-center items-center font-montserat text-xl font-bold">loading<ThreeDots height="80" width="80" radius="9" color="blue" ariaLabel="loading"/></div>}
           { ArrayList.length === 0 ? 
-          <div className={`min-h-screen text-indigo-800 flex ${props.loading ? "block" : "hidden"} justify-center items-center`}> No Lecture Available</div>  :
+          <div className={`min-h-screen text-indigo-800 flex ${props.loading ? "block" : "hidden"} font-montserat justify-center items-center`}> No Lecture Available</div>  :
                   ArrayList.map((info,i) => (
-                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"}  justify-center `} data-aos="zoom-in">
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} font-josefins justify-center `} data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-indigo-800 
                               items-center text-indigo-800 
@@ -61,7 +60,7 @@ function ViewCrp304 (props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 

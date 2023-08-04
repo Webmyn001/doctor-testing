@@ -71,11 +71,11 @@ function ViewHome (props) {
        return (
                < >
           <div className="bg-[#f5f5f5] w-full min-h-screen">
-          <h1 className="text-center font-bold text-white bg-gradient-to-r from-indigo-800 to-cyan-600 " data-aos="fade-left"> View Lectures</h1>
+          <h1 className="text-center font-bold font-montserat text-white bg-gradient-to-r from-indigo-800 to-cyan-600 " data-aos="fade-left"> View Lectures</h1>
                     {
                         ViewList.map((info,i) => (
                             
-                          <div  key={i} className="flex items-center justify-center " data-aos="zoom-in">
+                          <div  key={i} className="flex items-center font-josefins justify-center " data-aos="zoom-in">
                             <div>
                             <button  className="flex flex-col  rounded-lg hover:border-[2px]  duration-500 hover:border-indigo-800 
                              hover:bg-indigo-800 items-center text-indigo-800 hover:text-white hover:drop-shadow-[0px_9px_4px_rgba(23,255,120,0.3)] 

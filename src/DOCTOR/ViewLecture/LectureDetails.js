@@ -35,8 +35,8 @@ function UploadAEC() {
 }
   return (
     <div className='min-h-screen bg-[#f5f5f5]'>
-        <h1 className=' text-center font-bold w-full pb-1 text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
-        <div className='flex min-h-screen justify-center items-center'>
+        <h1 className=' text-center font-bold w-full pb-1 font-montserat text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
+        <div className='flex min-h-screen font-josefins justify-center items-center'>
           <div className='flex flex-col  shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white   items-center rounded-[32px]'>
        
        
@@ -60,7 +60,7 @@ function UploadAEC() {
 
              <div className='flex justify-between mt-[15px] items-center'>
 
-        <a href={data.document[0].url} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center text-xs items-center'>Download File<BiDownload/></span></a>
+        <a href={data.document[0].url} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
              </div>
 
              

@@ -72,8 +72,8 @@ function UploadLectureCrp405() {
   console.log(Topic,Description,document)
   return (
     <div className='min-h-screen sm:min-h-[900px] bg-[#f5f5f5]'>
-        <h1 className='font-bold text-center w-full pb-1 text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
-        <div className='flex bg-indigo-800 justify-center items-center'>
+        <h1 className='font-bold text-center w-full pb-1 font-montserat text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2  text-xl '>Upload New Lecture</h1>
+        <div className='flex bg-indigo-800 font-josefins justify-center items-center'>
           <div className='flex flex-col shadow-lg w-[311px] h-[445px] border-2 border-indigo-800 bg-white absolute top-[160px] items-center rounded-[32px]'>
        
        
@@ -86,7 +86,7 @@ function UploadLectureCrp405() {
         
         
          {/*  form */}
-         <div className=''>
+         <div className=' font-josefins'>
          <form className='w-[220px] mt-[60.5px]' onSubmit={saveForm} encType="multipart/form-data">
 
           <input placeholder='Topic or Title'  value={Topic} onChange={OnchangeTopic} 
@@ -95,14 +95,14 @@ function UploadLectureCrp405() {
           <textarea placeholder='Description'  value={Description} onChange={OnchangeDescription}
           className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600 text-indigo-700 mt-[24px]'/>
 
-          <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 15mb)</h3>
+          <h3 className='text-xs pt-5 text-indigo-800 text-center'>kindly upload document only below (Max 5mb)</h3>
 
           <input  type="file"  name='document' onChange={Onchangeimages}
           className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-indigo-600  mt-[12px]' required/>
 
       
                {/* Upload button */}
-               <div className='flex justify-center mb-2 items-center'>
+               <div className='flex justify-center items-center mb-2'>
              <Button name="Upload"/>
                </div>
             </form>
