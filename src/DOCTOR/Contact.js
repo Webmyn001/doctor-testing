@@ -6,12 +6,12 @@ import {BsFillTelephoneFill} from "react-icons/bs"
 function Contact() {
   return (
     <div className='bg-[#f5f5f5]'>
-      <div className='p-4 text-center bg-gradient-to-tr flex  items-center justify-center from-[#7cb9e8] to-[#f0f8ff]  h-[100px] rounded-b-full drop-shadow-sm'></div>
+      <div className='p-4 text-center bg-white flex  items-center justify-center  h-[100px] rounded-b-full shadow-xl shadow-indigo-800/50'></div>
     
     
        <div className=' text-gray-900  flex justify-center items-center w-full min-h-[500px]'>
 
-         <div className='border-l-2 rounded-lg w-[350px] sm:w-[450px] text-indigo-800 h-fit pb-4  border-indigo-800 shadow-xl '>
+         <div className=' rounded-lg w-[350px] sm:w-[450px] text-indigo-800 h-fit py-6  shadow-indigo-800/50 shadow-xl '>
         <div className='flex justify-center items-center font-bold text-indigo-800'>
           <h1>Contact us</h1>
         </div>
@@ -47,7 +47,7 @@ function Contact() {
 
 
 
-       <div className='p-4 text-center bg-gradient-to-tr flex  items-center justify-center from-[#7cb9e8] to-[#f0f8ff]  h-[100px] rounded-t-full drop-shadow-sm'></div>
+       <div className='p-4 text-center bg-white flex  items-center justify-center shadow-indigo-500/50 h-[100px] rounded-t-full shadow-xl'></div>
       
   </div>
   )

@@ -34,7 +34,7 @@ function Home(props) {
 
   return (
     <div className='bg-[#f5f5f5] w-full min-h-screen'>
-   <h1 className='text-center font-semibold font-serif bg-gradient-to-r text-white from-indigo-800 to-cyan-600 pt-[12px]'>Admin Page</h1> 
+   <h1 className='text-center font-semibold font-serif bg-gradient-to-r text-white from-indigo-800 to-cyan-600 pt-[8px]'>Admin Page</h1> 
    <h1 className=' pt-3 px-4 sm:pl-9 font-normal font-serif text-indigo-800'><span className='flex items-center justify-start gap-x-1 ' ><AiFillPlusCircle/>Recent Lectures Uploaded</span></h1>
 
                                                 {/*Plant Pathology (CRP 304)*/}
