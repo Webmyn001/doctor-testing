@@ -3,12 +3,16 @@ import Button from './Button'
 
 
 function Addcomment() {
+
+   const HandleSubmit =(e)=> {
+     e.preventDefault()
+      }
   return (
 
     //to Add comment 
 
     
-    <form className='w-[220px] mt-[50px]'>
+    <form className='w-[220px] mt-[50px]' onSubmit={HandleSubmit}>
 
     <input placeholder='Name'  className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px] border-[#707070] text-[#1c1d1d] '/>
     <input placeholder='Department' className='w-full border-b-[1px] focus:outline-0 text-[14px] pb-[3.5px]  border-[#707070] text-[#1c1d1d] mt-[24px]'/>

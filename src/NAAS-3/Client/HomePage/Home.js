@@ -35,7 +35,7 @@ function Home(props) {
 
   return (
     <div className='bg-[#f5f5f5] w-full min-h-screen'>
-   <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#182c25] to-[#1e453e] pt-[8px]'>Home Page</h1> 
+   <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#182c25] to-[#1e453e] pt-[8px]'>NAAS-III First Semester Lecture Notes</h1> 
    <h1 className=' pt-3 px-4 sm:pl-9 font-normal font-jost text-[#182c25]'><span className='flex items-center justify-start gap-x-1 ' ><AiFillPlusCircle/>Recent Lectures Uploaded</span></h1>
 
                                                 {/*AEC 301*/}
