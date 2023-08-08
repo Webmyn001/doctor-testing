@@ -11,21 +11,21 @@ const Comment = () => {
     return (
       <div className='min-h-screen font-josefins bg-[#f5f5f5]'>
      <div className='flex items-center justify-center relative'>
-      <div className='bg-gradient-to-tr from-[#ffff] to-[#3d54ff] flex items-center justify-center h-[189px] w-full rounded-b-[25px]'>
+      <div className='bg-gradient-to-tr from-[#182c25] to-[#5db6a6]  flex items-center justify-center h-[189px] w-full rounded-b-[25px]'>
       </div>
       </div>
       {/* General Container */}
       <div className='flex justify-center items-center '>
-       <div className='flex flex-col shadow-lg w-[300px] h-fit bg-white  absolute top-[150px] pb-5 items-center rounded-[32px]'>
+       <div className='flex flex-col shadow-lg w-[300px] h-fit bg-white  absolute top-[160px] pb-5 items-center rounded-[32px]'>
        
        
         {/* log in & singn up button div */}
          <div className='buttons flex justify-between mt-[35px]'>
-          <button onClick={()=> setOpen("New comment")} className={`${ open ==="New comment"  ? "bg-[#3d54ff] text-white" : "bg-white  "} focus:outline-0 border-[0.2px] border-[#3d54ff] rounded-l-full text-xs px-2 `}>Drop Comment</button>
-          <button onClick={()=> setOpen("View comment")} className={`${ open ==="View comment"  ? "bg-[#3d54ff]  text-white" : "bg-white"} focus:outline-0 border-[0.2px] border-[#3d54ff] rounded-r-full text-xs px-2 `}>View Comments</button>
+          <button onClick={()=> setOpen("New comment")} className={`${ open ==="New comment"  ? "bg-[#182c25] text-white" : "bg-white  "} focus:outline-0 border-[0.2px] border-[#182c25] rounded-l-full text-xs px-2 `}>Drop Comment</button>
+          <button onClick={()=> setOpen("View comment")} className={`${ open ==="View comment"  ? "bg-[#182c25]  text-white" : "bg-white"} focus:outline-0 border-[0.2px] border-[#182c25] rounded-r-full text-xs px-2 `}>View Comments</button>
         </div>
         
-        
+        {/* from-[#182c25] to-[#1e453e]  */}
         
          {/* login & Sign Up  form */}
          <div className=''>

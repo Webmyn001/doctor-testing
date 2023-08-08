@@ -1,71 +1,84 @@
-import React from 'react'
 
+
+import {React,useEffect, } from "react";
+
+
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {Link, useLocation} from "react-router-dom"
-import {BiDownload} from "react-icons/bi"
+import {ThreeDots} from "react-loader-spinner"
 
 
 
-function LectureDetails() {
+
+
+function ViewCPP301 (props) {
+
 
     const location = useLocation()
      const data = location.state
      
-     console.log(data.document[0].url)
+                
+    const ArrayList = props.LectureListCPP301      
 
+     console.log(data)
 
- const HandleSubmit = (e) => {
-  e.preventDefault();
- }
+           
 
-
-  return (
-    <div className='min-h-screen bg-[#f5f5f5]'>
-        <h1 className=' text-center font-bold w-full pb-1 font-montserat text-white bg-gradient-to-r from-indigo-800 to-cyan-600 pt-1 px-2 text-xl'>Lecture Note</h1>
-        <div className='flex min-h-screen font-josefins justify-center items-center'>
-          <div className='flex flex-col  shadow-lg w-[311px] h-fit border-2 border-indigo-800 bg-white   items-center rounded-[32px]'>
        
-       
-        {/*  */}
-         <div className=' text-center text-indigo-800 mt-[37.5px]'>
-          <h1 className='font-medium text-xl'>{data.CourseCode}</h1>
-          <h1 className='font-medium text-xl'>{data.CourseTitle}</h1>
-        </div>
-        
-        
-        
-         {/*  form */}
-         <div className=''>
-         <form onSubmit={HandleSubmit} className='w-[220px] mt-[30.5px]'>
 
-          <h1 className='w-full  text-[15px] font-bold  text-indigo-700 '>{data.Topic}  </h1>
-          <p className='w-full  text-[14px] pt-[18px]  text-indigo-700 '> {data.Description}  </p>
-
-
-             {/* View file= pdf/word and download*/}
-
-             <div className='flex justify-between mt-[15px] items-center'>
-
-        <a href={data.document[0].url} download={data.Topic}  className={"text-xl p-1 text-indigo-800"}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
-             </div>
 
              
-      
-               {/* view button */}
-               <div className='flex justify-between  my-[15px]  mb-[15px] items-center'>
-               <Link to="/view">
+    useEffect(()=> {
+                     AOS.init({duration:2000})
+
+                },[])
+
+       return (
+               < >
+        <div className="bg-[#f5f5f5] w-full text-[#182c25] min-h-screen">
+          <h1 className="text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e]" data-aos="fade-left"> {data.CourseTitle}  {data.CourseCode}</h1>
+
+           {/* show loader */}
+             {console.log(props)}
+           {props.loading ?<div></div>:<div className="flex min-h-screen justify-center items-center font-montserat text-xl font-bold">loading<ThreeDots height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
+          { ArrayList.length === 0 ? 
+          <div className={`min-h-screen text-[#182c25] flex ${props.loading ? "block" : "hidden"} font-montserat justify-center items-center`}> No Lecture Available</div>  :
+                  ArrayList.map((info,i) => (
+                         <div  key={i} className={`flex items-center ${props.loading ? "block" : "hidden"} text-[#182c25] font-josefins justify-center `} data-aos="zoom-in">
+                            <div>
+                            <button  className="flex flex-col  rounded-lg hover:border-[2px] transition-all duration-300  border-[#182c25] 
+                              items-center text-[#182c25] 
+                             justify-cente w-[300px] md:w-[400px] h-fit  shadow-2xl  my-8 ">
+                        <Link  to={ {pathname:`/lecturedetails/${info._id}`}}  state={info}>
+                              
+                              <div className=" ">
+                                <h1 className=" font-bold  text-center pt-1 mt-2">  {info.CourseTitle} </h1>
+                               <h1 className="text-xl font-bold text-center p-2  ">  {info.CourseCode} </h1>
+                              </div>
+       <div className='text-center text-[#182c25] '>
+                <h1 className=' text-[15px] font-bold px-2  '>{info.Topic}  </h1>
+                <h3 className=' pb-3 pt-2'>View</h3>
+        </div>                 
+               
+
+
+                         </Link>
+                            </button>
+                            </div>
+                        </div>
+                        ))
+                    }
+
+
+
+
+                    
+               </div>  
                 
-             <button className='p-[3px] bg-indigo-800 hover:text-indigo-800 duration-300 transition-colors text-white focus:outline-0 hover:border-[0.5px] border-indigo-800 hover:bg-white  rounded-lg'>Back</button>
-               </Link>
-               </div>
-            </form>
-         </div>
+              </>
+              );
+                   }
 
-         
-         
-           </div>
-       </div>
-    </div>
-  )
-}
-
-export default LectureDetails
+     export default ViewCPP301;
