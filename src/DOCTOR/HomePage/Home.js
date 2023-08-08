@@ -57,7 +57,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
@@ -90,7 +90,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
@@ -123,7 +123,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
@@ -156,7 +156,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
@@ -188,7 +188,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
@@ -219,7 +219,7 @@ function Home(props) {
                               </div>
        <div className='text-center'>
                 <h1 className=' text-[15px] font-bold px-2 text-indigo-700 '>{info.Topic}  </h1>
-                <h3 className='font-mono pb-3 pt-2'>View</h3>
+                <h3 className=' pb-3 pt-2'>View</h3>
         </div>                 
                
 
