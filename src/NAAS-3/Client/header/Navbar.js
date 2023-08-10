@@ -1,7 +1,7 @@
 import React from "react"
 import {  useState } from "react"
 import { Link } from "react-router-dom";
-import image1 from "../Images/genetics.jpg"
+import image1 from "../Images/Naas.jpg"
 
 
 

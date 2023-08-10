@@ -35,11 +35,11 @@ function Home(props) {
 
   return (
     <div className='bg-[#f5f5f5] w-full min-h-screen'>
-   <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#182c25] to-[#1e453e] pt-[8px]'>NAAS-III First Semester Lecture Notes</h1> 
+   <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#182c25] to-[#1e453e] pt-[8px]'>NAAS-III Lecture Notes (First Semester)</h1> 
    <h1 className=' pt-3 px-4 sm:pl-9 font-normal font-jost text-[#182c25]'><span className='flex items-center justify-start gap-x-1 ' ><AiFillPlusCircle/>Recent Lectures Uploaded</span></h1>
 
                                                 {/*AEC 301*/}
-   <h1 className='text-center font-bold text-white font-montserat bg-gradient-to-r from-[#182c25] to-[#1e453e] '> Plant Pathology (CRP 304)</h1>
+   <h1 className='text-center font-bold text-white font-montserat bg-gradient-to-r from-[#182c25] to-[#1e453e] '> Statistics & Biometrics. (AEC 301)</h1>
 
    {props.loading ? <div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListAEC301.length === 0 ? 
@@ -72,7 +72,7 @@ function Home(props) {
 
 
                              {/* AEC 303*/}
- <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '> Crop Protection and Disease Control (CRP 405)</h1>
+ <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '> Principles of Agricultural Economics [I].   (AEC 303)</h1>
             
  {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListAEC303.length === 0 ? 
@@ -105,7 +105,7 @@ function Home(props) {
 
 
                              {/* ANS 301*/}
-    <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '>Soil Borne and Root Diseases (CRP 511)</h1>
+    <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '>Non-ruminant Animal Production. (ANS 301)</h1>
              
     {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListANS301.length === 0 ? 
@@ -138,7 +138,7 @@ function Home(props) {
                     
                     
                      {/* AXD 301*/}
-  <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '> Plant Disease Control  (CRP512)</h1>
+  <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '> Extension Teaching & Learning Process and Methods.  (AXD 301)</h1>
            
   {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListAXD301.length === 0 ? 
@@ -170,7 +170,7 @@ function Home(props) {
                     }  
                     
                              {/*  (CPP301)*/}
-<h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e]'>Pests and Microorganisms in Agriculture  (CRP305)</h1>
+<h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e]'> Agronomy of Arable Crops & Agro-climatology. (CPP 301)</h1>
             
 {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListCPP301.length === 0 ? 
@@ -201,7 +201,7 @@ function Home(props) {
                         ))
                     }  
                              {/* CPP 303*/}
-  <h1 className='text-center font-bold bg-gradient-to-r font-montserat text-white from-[#182c25] to-[#1e453e] '>Principles of Nematology (CPT503)</h1>
+  <h1 className='text-center font-bold bg-gradient-to-r font-montserat text-white from-[#182c25] to-[#1e453e] '>Introductory Agricultural Entomology. (CPP 303)</h1>
             
   {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListCPP303.length === 0 ? 
@@ -232,7 +232,7 @@ function Home(props) {
                         ))
                     }
                                 {/* SLM301 */}
-       <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '>Pests and Microorganisms in Agriculture  (CRP305)</h1>
+       <h1 className='text-center font-bold text-white bg-gradient-to-r font-montserat from-[#182c25] to-[#1e453e] '>Introductory Pedology and Soil Physics. (SLM 301)</h1>
             
           {props.loading ?<div></div>:<div className="flex min-h-[400px] justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#182c25" ariaLabel="loading"/></div>}
           { LatestListSLM301.length === 0 ? 

@@ -20,47 +20,47 @@ function ViewHome (props) {
   
     const ViewList = [
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Statistics and Biometrics.",
             CourseCode: "AEC 301",
             Link : "view-AEC301",
             image  : image1,
         },
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Principles of Agricultural Economics. [I]",
             CourseCode: "AEC 303",
             Link : "view-AEC303",
             image  : image2,
         },
 
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Non-ruminant Animal Production.",
             CourseCode: "ANS 301",
             Link : "view-ANS301",
             image  : image3,
         },
 
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Extension Teaching & Learning Process and Methods.",
             CourseCode: "AXD 301",
             Link : "view-AXD301",
             image  : image1,
         },
 
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Agronomy of Arable Crops & Agro-climatology.",
             CourseCode: "CPP 301",
             Link : "view-CPP301",
             image  : image2,
         },
 
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Introductory Agricultural Entomology.",
             CourseCode: "CPP 303",
             Link : "view-CPP303",
             image  : image3,
         },
         {
-            CourseTitle : "Statistics and Biometrics",
+            CourseTitle : "Introductory Pedology & Soil Physics.",
             CourseCode: "SLM 303",
             Link : "view-SLM303",
             image  : image3,
