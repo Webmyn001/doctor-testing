@@ -20,7 +20,7 @@ import {FaBars,FaTimes} from "react-icons/fa"
             {/* logo */}
             <div className="py-1">
             <Link to="/"> 
-              <div className="pl-4 ">
+              <div className="pl-2 ">
               <img src={image1} alt="logo" className="h-[50px] w-[50px] cursor-pointer rounded-lg"/>
                 </div>   
                </Link> 
