@@ -16,12 +16,12 @@ import {FaBars,FaTimes} from "react-icons/fa"
         <div>
             
                      {/* large screen */}
-          <div className="bg-[#f5f5f5] flex px- text-[#182c25] h-[60px]">
+          <div className="bg-[#f5f5f5] flex text-[#182c25] h-[60px]">
             {/* logo */}
-            <div>
+            <div className="py-1">
             <Link to="/"> 
-              <div className="pl-4 pt-2">
-              <img src={image1} alt="logo" className="h-[50px] w-[50px] p-1 cursor-pointer rounded-lg"/>
+              <div className="pl-4 ">
+              <img src={image1} alt="logo" className="h-[50px] w-[50px] cursor-pointer rounded-lg"/>
                 </div>   
                </Link> 
              </div>
