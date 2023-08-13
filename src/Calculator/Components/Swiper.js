@@ -9,6 +9,8 @@ import ui1 from './../Schools/ui.jpg';
 import unilag from './../Schools/unilag.jpg';
 import unilorin from './../Schools/Unilorin.jpg';
 import unilorin1 from './../Schools/University-of-Ilorin.jpg';
+import Alloverpoly from './../Schools/Alloverpoly.jpg';
+
 
 
 
@@ -43,8 +45,8 @@ import "swiper/css/navigation";
      },
      {
       id : 3,
-      name : "UNIVERSITY OF LAGOS, AKOKA",
-      image : unilag,
+      name : "ALLOVER CENTRAL POLYTECHNIC, SANGO-OTA ,OGUN STATE",
+      image : Alloverpoly,
      },
      {
       id : 4,
@@ -70,11 +72,17 @@ import "swiper/css/navigation";
      
      {
       id : 8,
+      name : "UNIVERSITY OF LAGOS, AKOKA",
+      image : unilag,
+     },
+     
+     {
+      id : 9,
       name : "UNIVERSITY OF IBADAN, IBADAN",
       image : ui1,
      },
      {
-      id : 9,
+      id : 10,
       name : "UNIVERSITY OF ILORIN, ILORIN",
       image : unilorin,
      },

@@ -24,7 +24,7 @@ import Swipercomponent from "./Swiper";
          <Swipercomponent />
          
           <p className="text-[#fff8ea] text-center p-4 text-2xl">
-             Have you been looking for an easy way to calculate your G.P.A ?
+             Have you been looking for an easy way to compute your G.P.A ?
           <br/>
            You are in the right place, kindly click the <strong>Get started</strong> button to start using the Calculator. 
            </p>
