@@ -1,28 +1,31 @@
-import React from "react";
-import logo from './../images/Mylogo.jpg'
-import {MdEmail} from "react-icons/md"
-import {RiWhatsappFill} from "react-icons/ri"
+import React, { useEffect, useState } from 'react'
 import {AiOutlineCopyright} from "react-icons/ai"
-const Footer = () => {
-    return(
-        <div className=" bg-[#594545] items-center
-        shadow-lg
-         flex justify-around pt-4 italic pb-2 font-light text-[#fff8ea] h-[200px]">
-            
-            <div> 
-              <h1>Designed by Webmyn</h1>
-              <h1 className="flex items-center gap-x-1"><span>Copyright 2022</span><AiOutlineCopyright/></h1>
-               <h1 className="pt-2 flex items-center gap-x-1"> <span><MdEmail/></span>Bellomuhyideen0001@gmail.com</h1>
-               <h1 className="pt-1 flex  items-center gap-x-1"> <span><RiWhatsappFill/></span>08139116879</h1>
-               <h1 className="pt-1 flex  items-center gap-x-1"> <span><RiWhatsappFill/></span>08033269810</h1> 
-            </div>   
-            
-            <div>
-                <img src={logo} alt="logo" className="h-[70px] w-[70px] rounded-br-2xl rounded-tl-2xl rounded-bl-lg rounded-tr-lg" />
-             </div> 
+import { IoLogoWhatsapp } from 'react-icons/io'
 
+
+function Footer() {
+    const [date, setDate] = useState(new Date())
+   
+    useEffect(()=> {
+     var timer = setInterval(()=>setDate(new Date()), 1000)
+  
+     return function cleanup() {
+        clearInterval(timer)
+     }
+    })
+  
+  return (
+    // To be done again, i want to do best footer, to be able to visit mt whatsapp,linkden e.t.c from here
+    <div className=" text-center font-medium text-[#fff8ea]  bg-[#594545]  w-full h-[70px] text-xs font-jost tracking-wider ">
+            <div className="flex flex-col justify-center items-center pt-3 ">
+                <h1 className="flex items-center font-semibold gap-x-1"> Webmyn <span><AiOutlineCopyright/></span> {date.getUTCFullYear()}</h1>
+                <h1>bellomuhyideen0001@gmail.com</h1>
+                <h1>09064028709</h1>
+
+               
+            </div>
         </div>
-    )
+  )
 }
 
 export default Footer

@@ -20,12 +20,7 @@ import Swipercomponent from "./Swiper";
         <div className=" bg-gradient-to-tr from-[#815b5b] to-[#9e7676] w-full h-full shadow-sm ">
           <h1 className="text-center font-bold text-[#fff8ea]  text-2xl md:text-3xl animate-pulse tracking-wider pt-[50px]">
          G.P.A  Calculator</h1>
-                         {/* date and time */}
-         <div>
-            <h1>time : {date.toLocaleTimeString()}</h1>
-            <h1>date : {date.toLocaleDateString()}</h1>
-
-        </div> 
+        
          <Swipercomponent />
          
           <p className="text-[#fff8ea] text-center p-4 text-2xl">

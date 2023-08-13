@@ -86,7 +86,7 @@ function App() {
     
     
        return (
-    <div>
+    <div className='font-josefins'>
        <Router>
       <Header/>
            <Routes>

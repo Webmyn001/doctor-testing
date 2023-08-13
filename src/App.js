@@ -1,185 +1,152 @@
-import React, { useEffect, useState } from 'react'
-import {BrowserRouter as Router ,Route, Routes, } from "react-router-dom"
+import './App.css';
+import { useEffect } from 'react';
 
-import Navbar from './NAAS-3/Client/header/Navbar'
-import Home from './NAAS-3/Client/HomePage/Home'
+import Header from './Calculator/Components/Navbar/Header';
+import {BrowserRouter as Router , Route, Routes, } from "react-router-dom";
+import Home from './Calculator/Components/Home';
 
+import Getstarted from './Calculator/Components/Getstarted';
+import Gpcalc4 from './Calculator/Components/Gpcalc4';
+import Result from './Calculator/Components/Results';
+import {  useState } from 'react';
+import Finalresult from './Calculator/Components/Finalrsult';
 
-
-import LectureDetails from './NAAS-3/Client/ViewLecture/LectureDetails'
-import ViewHome from './NAAS-3/Client/ViewLecture/VeiwHome'
-
-
-
-import ViewAEC301 from './NAAS-3/Client/ViewLecture/ViewAEC301'
-import ViewAEC303 from './NAAS-3/Client/ViewLecture/ViewAEC303'
-import ViewANS301 from './NAAS-3/Client/ViewLecture/ViewANS301'
-import ViewAXD301 from './NAAS-3/Client/ViewLecture/ViewAXD301'
-import ViewCPP301 from './NAAS-3/Client/ViewLecture/ViewCPP301'
-import ViewCPP303 from './NAAS-3/Client/ViewLecture/ViewCPP303'
-import ViewSLM301 from './NAAS-3/Client/ViewLecture/ViewSLM301'
-
-import axios from 'axios'
-import Contact from './NAAS-3/Client/Contact/Contact'
-import Footer from './NAAS-3/Client/Footer/Footer'
-import Comment from './NAAS-3/Client/Comment/Comment'
-import AllComments from './NAAS-3/Client/Comment/AllComments'
+import Docs from './Calculator/Components/Docs';
+import About from './Calculator/Components/About';
+import Gpcalc5 from './Calculator/Components/Gpcalc5';
+import Gpcalc7 from './Calculator/Components/Gpcalc7';
+import ReactGA from "react-ga" ;
+ 
 
 
+const TRACKING_ID = "UA-235873888-3"
+ReactGA.initialize(TRACKING_ID)
 
 function App() {
 
-     const [LectureListAEC301, setLectureListAEC301] =useState([])
-     const [LectureListAEC303, setLectureListAEC303] =useState([])
-     const [LectureListANS301, setLectureListANS301] =useState([])
-     const [LectureListAXD301, setLectureListAXD301] =useState([])
-     const [LectureListCPP301, setLectureListCPP301] =useState([])
-     const [LectureListCPP303, setLectureListCPP303] =useState([])
-     const [LectureListSLM301, setLectureListSLM301] =useState([])
+   
+  useEffect( ()=> {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+   }, []);
+  
 
-     
-     const [loading, setloading] =useState(false)
-
-     const getLectureAEC301 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/cpt503/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListAEC301(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-       
-     const getLectureAEC303 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp511/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListAEC303(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-
-     const getLectureANS301 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp512/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListANS301(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-
-     const getLectureAXD301 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp405/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListAXD301(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-
-     const getLectureCPP301 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp304/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListCPP301(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-
-     const getLectureCPP303 = async  () => {
-      axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp305/")
-      .then(res => {
-        console.log(res.data)
-        setLectureListCPP303(res.data)
-        setloading(true)
-      }).catch(err => {
-        console.log(err)
-      })
-     }
-
-     const getLectureSLM301 = async  () => {
-        axios.get("https://defiant-lime-tweed-jacket.cyclic.app/api/crp305/")
-        .then(res => {
-          console.log(res.data)
-          setLectureListSLM301(res.data)
-          setloading(true)
-        }).catch(err => {
-          console.log(err)
-        })
-       }
-
-
-   useEffect(() => {
-        getLectureAEC301()
-        getLectureAEC303()
-        getLectureANS301()
-        getLectureAXD301()
-        getLectureCPP301()
-        getLectureCPP303()
-        getLectureSLM301()
-
-        }, [])
-
-
-  return (
-    <div>
-
-    <Router>
-            <Navbar/>
-       
-         <Routes>
-
-           {/* Home Page Routes */}
-               <Route path = "/" exact element= {
-               <Home LectureListAEC301={LectureListAEC301} 
-               loading={loading} 
-               LectureListAEC303={LectureListAEC303}
-               LectureListANS301={LectureListANS301} 
-               LectureListAXD301={LectureListAXD301} 
-               LectureListCPP301={LectureListCPP301}
-               LectureListCPP303={LectureListCPP303} 
-               LectureListSLM301={LectureListSLM301} 
-               
-               />}> 
-               </Route>
-
-               {/* View lecture */}
-               <Route path = "/view" exact element= {<ViewHome/>}></Route>
-               <Route path = "view/view-AEC301" exact element= {<ViewAEC301  LectureListAEC301={LectureListAEC301}  loading={loading}/>}></Route>
-               <Route path = "view/view-AEC303" exact element= {<ViewAEC303  LectureListAEC303={LectureListAEC303}  loading={loading}/>}></Route>
-               <Route path = "view/view-ANS301" exact element= {<ViewANS301  LectureListANS301={LectureListANS301}  loading={loading}/>}></Route>
-               <Route path = "view/view-AXD301" exact element= {<ViewAXD301  LectureListAXD301={LectureListAXD301}  loading={loading}/>}></Route>
-               <Route path = "view/view-CPP301" exact element= {<ViewCPP301  LectureListCPP301={LectureListCPP301}  loading={loading}/>}></Route>
-               <Route path = "view/view-CPP303" exact element= {<ViewCPP303  LectureListCPP303={LectureListCPP303}  loading={loading}/>}></Route>
-               <Route path = "view/view-SLM301" exact element= {<ViewSLM301  LectureListSLM301={LectureListSLM301}  loading={loading}/>}></Route>
-               <Route path = "/lecturedetails/:id" exact element= {<LectureDetails/>}></Route>
-
-               {/* CONTACT */}
-               <Route path = "/contact" exact element= {<Contact/>}></Route>
-
-               {/* comment to be done later*/}
-
-               <Route path = "/comment" exact element= {<Comment/>}></Route>
-               <Route path = "/allcomments" exact element= {<AllComments/>}></Route>
-
-
-               
-         </Routes>
-       <Footer/>
-         </Router> 
-
+  
          
-      </div>
-  )
+   const [master , setMaster] = useState([])
+   
+  
+   const [calc, setcalc] = useState([])
+   const [calc2, setcalc2] = useState([])
+            
+   
+   console.log(master) 
+     const getinfo =(info) => {
+        console.log(info)
+        setMaster([...master , info ])
+        
+       }
+      
+       
+    console.log(master)
+      
+       console.log(master)
+        
+       
+     
+   
+       
+       
+       
+       
+          
+       
+       
+   
+     const calculate = (every, totalpoint) => {
+       console.log(calc)
+       console.log(calc2)
+        
+       
+       
+       setcalc(every)
+       setcalc2(totalpoint)
+    
+       
+       
+       
+     }
+     const finalresult = (calc2 / calc)
+     console.log(finalresult)
+     console.log(master)
+      
+     
+   
+     
+
+    
+    
+       return (
+    <div className='font-josefins'>
+       <Router>
+      <Header/>
+           <Routes>
+             <Route exact path="/" element = {<Home/>}></Route>
+             <Route  exact path="/docs" element = {<Docs/>}></Route>
+             <Route exact path="/getstarted"  element = {<Getstarted/>}></Route>
+             <Route exact path='/about' element={<About/>}></Route>
+             <Route exact path="/result5"  element = 
+             {
+               <> 
+             <Gpcalc4    getinfo={getinfo} calculate={calculate}/>
+             <Result   master={master} calc={calc} calc2= {calc2} />
+              <Finalresult   finalresult={finalresult} />
+              
+              </>
+             }> 
+             
+             </Route>
+            
+             <Route exact path="/result4"  element = 
+             {
+               <> 
+             <Gpcalc5   getinfo={getinfo} calculate={calculate}/>
+             <Result   master={master} calc={calc} calc2= {calc2} />
+              <Finalresult   finalresult={finalresult} />
+              
+              </>
+             }> 
+             
+             </Route>
+             
+             <Route exact path="/result7"  element = 
+             {
+               <> 
+             <Gpcalc7  getinfo={getinfo} calculate={calculate}/>
+             <Result   master={master} calc={calc} calc2= {calc2} />
+              <Finalresult   finalresult={finalresult} />
+              
+              </>
+             }> 
+             
+             </Route>
+           
+           </Routes>
+
+          
+      </Router>
+       
+     
+          
+             
+            
+
+          
+     
+     
+    
+    
+    </div>
+  );
 }
 
-export default App
+export default App;
