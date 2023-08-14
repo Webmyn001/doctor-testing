@@ -16,7 +16,6 @@ function Contact() {
 },[])
 
 
-
   return (
     <div className='bg-[#f5f5f5]'>
       <div className='p-4 text-center bg-white flex  items-center justify-center  h-[100px] rounded-b-full shadow-xl shadow-indigo-800/50'></div>
