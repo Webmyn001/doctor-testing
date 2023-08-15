@@ -28,7 +28,7 @@ function IDcardAdmin() {
 
         {/* image */}
         <div className='pl-2'>
-       <img src={data.Image} alt='#' className='w-[100px] h-[100px] rounded-sm object-cover'/>
+       <img src={data.Image[0].url} alt='#' className='w-[100px] h-[100px] rounded-sm object-cover'/>
        </div>
              {/* text */}
              <div className='max-w-[250px]'>

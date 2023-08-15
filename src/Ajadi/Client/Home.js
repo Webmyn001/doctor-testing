@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Button from './Button'
 
 function Home() {
@@ -18,9 +18,9 @@ function Home() {
   const [Age, setAge] = useState("")
   const [Qualification, setQualification] = useState("")
 
+  const navigate = useNavigate()
+   
 
-
-console.log(Name)
    
   const OnchangeName =(e)=> {
     setName(e.target.value)
@@ -93,17 +93,16 @@ console.log(Name)
 
   const saveForm = async (e) => {
     e.preventDefault();
-     
      axios.post("https://calm-pink-fossa-wear.cyclic.cloud/api/ajadi-form/add",{Name,Occupation,School,
      Class, Image, Status,
      Address, Location, Email, PhoneNo, Age, Qualification})
     .then((res)=>
     { 
     console.log("saved succesfully")
-    Navigate("/");
+    navigate("/");
     window.location.reload() 
-
     alert("Submitted succesfully! We Will get back to you on Whatsapp")
+
   }).catch((err)=> {
       console.log(err)
       alert("Unable to submit form, kindly complete the form")

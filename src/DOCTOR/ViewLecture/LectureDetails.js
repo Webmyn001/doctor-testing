@@ -27,7 +27,8 @@ function UploadAEC() {
     alert("Data deleted.")
     navigate("/");
     window.location.reload()
-      }catch (err) 
+      }
+  catch (err) 
   {
   console.log(err);
   alert("Unable to delete, Kindly ensure you are connectecd to the internet")

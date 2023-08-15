@@ -1,19 +1,21 @@
 import axios from 'axios'
 import React from 'react'
-import {Link, Navigate, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 
 function Details() {
 
     const location = useLocation()
     const data = location.state
     
+    const navigate = useNavigate()
+
     const deleteUser = async (id) => {
       // i want to do yes or no alert here
       alert("This lecture will be deleted")
       try{
         await axios.delete(`https://calm-pink-fossa-wear.cyclic.cloud/api/ajadi-form/${id}`);
         alert("Data deleted.")
-        Navigate("/");
+        navigate("/");
         window.location.reload()
           }catch (err) 
       {
@@ -27,7 +29,7 @@ function Details() {
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-indigo-800 to-cyan-600 py-[2px]'>Full Details</h1>
 <div className='flex justify-center items-center pt-6'>
        <div className='bg-white w-[350px] pb-3  pt-3 rounded-2xl shadow-xl shadow-indigo-800/50 flex flex-col items-center justify-center h-fit'>
-        <img src={data.Image} alt="#" className='w-[150px] h-[150px] rounded-full object-cover'/>
+        <img src={data.Image[0].url} alt="#" className='w-[150px] h-[150px] rounded-full object-cover'/>
          <h1 className='pt-2 font-semibold '>Name </h1>
          <h1>{data.Name}</h1>
 

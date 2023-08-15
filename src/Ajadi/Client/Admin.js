@@ -54,7 +54,7 @@ const [FormData, SetFormData] = useState([])
        {FormData.map((info,i)=>
        <tr className=' '>
                       <td className="border">{i+1}.</td>
-                      <td className="border flex justify-center items-center w-[70px] h-[70px]"><img src={info.Image.url} alt="#" className='w-[40px] h-[40px] object-cover rounded-2xl'/></td>
+                      <td className="border flex justify-center items-center w-[70px] h-[70px]"><img src={info.Image[0].url} alt="#" className='w-[40px] h-[40px] object-cover rounded-2xl'/></td>
                       <td className="border hover:text-blue-500 hover:underline px-2"><Link to={ {pathname:`/details/${info.Name}`}}  state={info}>{info.Name}</Link></td>
                       <td className="border hover:text-blue-500 hover:underline"><Link to={ {pathname:`/details/${info.Name}`}}  state={info}>{`${info.IdNo+i}`}</Link></td>
                      
