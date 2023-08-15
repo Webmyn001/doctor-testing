@@ -17,7 +17,7 @@ function IDcardAdmin() {
         {/* ID CARD */}
         <div className='border-transparent border-[0.2px] top-[250px] 
         bg-gradient-to-r text-white from-indigo-800 to-cyan-600
-        absolute rounded-2xl shadow-xl shadow-indigo-800/50  w-[300px] pb-4'>
+        absolute rounded-2xl shadow-xl shadow-indigo-800/50  w-[350px] pb-4'>
             <h1 className='text-center rounded-xl'>Ajadi Muslim Youth Forum</h1>
        
     
@@ -27,12 +27,12 @@ function IDcardAdmin() {
 
         {/* image */}
         <div className='pl-2'>
-       <img src={data.Image[0].url} alt='#' className='w-[100px] h-[100px] rounded-sm object-cover'/>
+       <img src={data.Image[0].url} alt='#' className='w-[100px] h-[100px] rounded-md object-cover'/>
        </div>
              {/* text */}
              <div className='max-w-[250px]'>
              <h2 className='pt-2'>{data.Name}</h2>
-             <h2>{data.IdNo}</h2>
+             <h2>{data.Status}</h2>
              <h2>{data.Occupation}</h2>
              <h2>{data.Address}</h2>
              <h2>{data.PhoneNo}</h2>
