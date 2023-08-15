@@ -13,11 +13,11 @@ function IDcardAdmin() {
 
               <h1 className='pt-5 text-center'>Headings here i dont know what to write here</h1>   
 
-    <div className='flex justify-center items-center '>
+    <div className='flex justify-center min-h-screen items-center '>
         {/* ID CARD */}
-        <div className='border-transparent border-[0.2px] top-[250px] 
+        <div className='border-transparent border-[0.2px] 
         bg-gradient-to-r text-white from-indigo-800 to-cyan-600
-        absolute rounded-2xl shadow-xl shadow-indigo-800/50  w-[350px] pb-4'>
+       rounded-2xl shadow-xl shadow-indigo-800/50  w-[350px] pb-4'>
             <h1 className='text-center rounded-xl'>Ajadi Muslim Youth Forum</h1>
        
     
