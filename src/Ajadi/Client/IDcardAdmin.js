@@ -30,13 +30,13 @@ function IDcardAdmin() {
        <img src={data.Image[0].url} alt='#' className='w-[100px] h-[100px] rounded-md object-cover'/>
        </div>
              {/* text */}
-             <div className='max-w-[250px] text-xs'>
+             <div className='max-w-[250px] px-1 text-xs'>
              <h2 className='pt-2'>{data.Name}</h2>
              <h2>Occupation: {data.Occupation}</h2>
              <h2>Qualification: {data.Qualification}</h2>
              <h2>Status: {data.Status}</h2>
              <h2>Address: {data.Address}</h2>
-             <h2>Telephone No.: {data.PhoneNo}</h2>
+             <h2>Telephone No: {data.PhoneNo}</h2>
 
              </div>
        </div> 

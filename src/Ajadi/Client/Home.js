@@ -99,13 +99,13 @@ function Home() {
     .then((res)=>
     { 
     console.log("saved succesfully")
-    navigate("/contact");
+    navigate("/");
     window.location.reload() 
-    alert("Thank you! Response recieved, Click 'OK' to complete your registration.")
+    alert("Thank you! Response recieved,We will get back to you on Whatsapp.")
 
   }).catch((err)=> {
       console.log(err)
-      alert("Unable to submit form, kindly complete the form")
+      alert("Unable to submit form, kindly complete the form.")
     })
     
     
