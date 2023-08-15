@@ -197,7 +197,7 @@ function Home() {
         className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
 
 <h3 className='text-xs pt-[25px] text-indigo-800 text-center'>Kindly include your country code e.g +2348139116879</h3>
-<input placeholder='Whatsapp Number e.g +2348139116879' type="Number" maxLength={14} value={WhatsappNo} onChange={OnchangeWhatsapp} required
+<input placeholder='Whatsapp Number e.g +2348139116879'  maxLength={14} value={WhatsappNo} onChange={OnchangeWhatsapp} required
         className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[10px] border-indigo-600 text-indigo-700 '/>
 
 
