@@ -127,6 +127,7 @@ function Home() {
 
                <div className=' text-center text-indigo-800 mt-[15px]'>
                     <h1 className='font-semibold font-arabic text-xl sm:text-2xl '>بِسْمِ ٱللّٰهِ ٱلرَّحْمٰنِ ٱلرَّحِيمِ</h1>
+                    <h1 className='font-semibold text-xs pt-2 font-josefins'>MOTO : Fostering the bond of brotherhood</h1>
                 </div>    
                   {/* Formm details */}
 
