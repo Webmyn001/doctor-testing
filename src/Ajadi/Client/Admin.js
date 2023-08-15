@@ -41,7 +41,7 @@ const [FormData, SetFormData] = useState([])
   
   { FormData.length === 0 ? 
           <div className={`min-h-screen text-indigo-800 flex ${loading ? "block" : "hidden"} font-montserat text-xl font-semibold justify-center items-center`}>  This List is Empty</div>  :
-     <table className="text-center  table-auto ">
+     <table className="text-center text-indigo-800 table-auto ">
             <tbody className="border">
             <tr className="border ">
                 <th className="border px-2">S/N</th>
