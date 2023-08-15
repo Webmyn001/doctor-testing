@@ -11,6 +11,10 @@ import {Link} from "react-router-dom";
         {name: "Admin",
         link : "/Admin"
        },
+
+       {name: "Contact us",
+       link : "/contact"
+      },
        
         
         

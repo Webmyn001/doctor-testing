@@ -11,20 +11,19 @@ function IDcardAdmin() {
   return (
     <div  className='bg-[#f5f5f5] text-gray-900 min-h-screen w-full '>
 
-        <div className='pt-[20px] text-center '>
-        <h1>Kindly Screenshot your ID Card and send it to<a href='https://wa.me/8139116879'> <span className='text-[#128c7e] text-xl'>this Whatsapp</span></a> for confirmation.</h1> 
-        </div>    
+              <h1 className='pt-5 text-center'>Headings here i dont know what to write here</h1>   
 
-    
     <div className='flex justify-center items-center '>
         {/* ID CARD */}
-        <div className='border-gray-700 border-[0.2px] top-[250px] absolute rounded-xl w-[370px] pb-4'>
+        <div className='border-transparent border-[0.2px] top-[250px] 
+        bg-gradient-to-r text-white from-indigo-800 to-cyan-600
+        absolute rounded-2xl shadow-xl shadow-indigo-800/50  w-[300px] pb-4'>
             <h1 className='text-center rounded-xl'>Ajadi Muslim Youth Forum</h1>
        
     
      
        
-        <div className="flex gap-x-6 items-center justify-center">
+        <div className="flex gap-x-6 items-center ">
 
         {/* image */}
         <div className='pl-2'>

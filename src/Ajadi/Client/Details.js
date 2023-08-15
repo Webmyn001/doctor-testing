@@ -27,23 +27,45 @@ function Details() {
   return (
     <div className='bg-[#f5f5f5]  text-gray-900 w-full min-h-screen'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-indigo-800 to-cyan-600 py-[2px]'>Full Details</h1>
-<div className='flex justify-center items-center pt-6'>
+<div className='flex justify-center items-center py-10 text-indigo-800'>
        <div className='bg-white w-[350px] pb-3  pt-3 rounded-2xl shadow-xl shadow-indigo-800/50 flex flex-col items-center justify-center h-fit'>
         <img src={data.Image[0].url} alt="#" className='w-[150px] h-[150px] rounded-full object-cover'/>
-         <h1 className='pt-2 font-semibold '>Name </h1>
+         <h1 className='pt-2 font-semibold '>Name: </h1>
          <h1>{data.Name}</h1>
 
-         <h1 className='pt-2 font-semibold '> Identity Number </h1>
-         <h1>{data.IdNo}</h1>
-
-         <h1 className='pt-2 font-semibold '> Address </h1>
-         <h1>{data.Address}</h1>
-
-         <h1 className='pt-2 font-semibold '> Ocuupation</h1>
+         <h1 className='pt-2 font-semibold '> Occupation: </h1>
          <h1>{data.Occupation}</h1>
 
-         <h1 className='pt-2 font-semibold '>Phone Number</h1>
+         <h1 className='pt-2 font-semibold '> School: </h1>
+         <h1>{data.School === "" ? "Nil" : data.School}</h1>
+
+         <h1 className='pt-2 font-semibold '>Class:</h1>
+         <h1>{data.Class === "" ? "Nil" : data.Class}</h1>
+
+         <h1 className='pt-2 font-semibold '>Qualification:</h1>
+         <h1>{data.Qualification}</h1>
+      
+
+         <h1 className='pt-2 font-semibold '>Status:</h1>
+         <h1>{data.Status}</h1>
+
+         <h1 className='pt-2 font-semibold '>Home Address:</h1>
+         <h1>{data.Address}</h1>
+
+         <h1 className='pt-2 font-semibold '>Location:</h1>
+         <h1>{data.Location}</h1>
+
+         <h1 className='pt-2 font-semibold '>Email Address:</h1>
+         <h1>{data.Email}</h1>
+
+         <h1 className='pt-2 font-semibold '>Age:</h1>
+         <h1>{data.Age === "" ? "Nil" : data.Age}</h1>
+
+
+         <h1 className='pt-2 font-semibold '>Phone Number:</h1>
          <h1>{data.PhoneNo}</h1>
+
+       
       
 
 

@@ -31,7 +31,7 @@ const [FormData, SetFormData] = useState([])
     <div className='bg-[#f5f5f5] pb-[60px] text-gray-900 w-full min-h-screen'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-indigo-800 to-cyan-600 py-[2px]'>Ajadi Muslim Youth Forum Database</h1>
      
-     <h1 className='text-center sm:text-xl pt-5 pb-2 font-semibold'>List of registered Youths.</h1>
+     <h1 className='text-center sm:text-xl pt-5 pb-2 text-indigo-800 font-semibold'>List of registered Youths.</h1>
 
      <div className='flex justify-center items-center'>
         {/* table */}
@@ -40,14 +40,14 @@ const [FormData, SetFormData] = useState([])
   {loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="blue" ariaLabel="loading"/></div>}
   
   { FormData.length === 0 ? 
-          <div className={`min-h-screen text-indigo-800 flex ${loading ? "block" : "hidden"} font-montserat justify-center items-center`}>  This List is Empty</div>  :
+          <div className={`min-h-screen text-indigo-800 flex ${loading ? "block" : "hidden"} font-montserat text-xl font-semibold justify-center items-center`}>  This List is Empty</div>  :
      <table className="text-center  table-auto ">
             <tbody className="border">
             <tr className="border ">
                 <th className="border px-2">S/N</th>
                 <th className="border px-2">Avatar</th>
                 <th className="border ">Name</th>
-                <th className="border px-2">Identity Number</th>
+                <th className="border px-2">Occupation</th>
 
 
             </tr>
@@ -56,7 +56,7 @@ const [FormData, SetFormData] = useState([])
                       <td className="border">{i+1}.</td>
                       <td className="border flex justify-center items-center w-[70px] h-[70px]"><img src={info.Image[0].url} alt="#" className='w-[40px] h-[40px] object-cover rounded-2xl'/></td>
                       <td className="border hover:text-blue-500 hover:underline px-2"><Link to={ {pathname:`/details/${info.Name}`}}  state={info}>{info.Name}</Link></td>
-                      <td className="border hover:text-blue-500 hover:underline"><Link to={ {pathname:`/details/${info.Name}`}}  state={info}>{`${info.IdNo+i}`}</Link></td>
+                      <td className="border hover:text-blue-500 hover:underline"><Link to={ {pathname:`/details/${info.Name}`}}  state={info}>{info.Occupation}</Link></td>
                      
            </tr>
        )}

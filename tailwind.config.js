@@ -9,7 +9,8 @@ module.exports = {
         poppins:['Poppins'],
         montserat:['Montserrat'],
         josefins:['Josefin Sans'],
-        jost:['Jost']
+        jost:['Jost'],
+        arabic:['Noto Naskh Arabic']
       }
     },
   },

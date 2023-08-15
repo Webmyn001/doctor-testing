@@ -27,10 +27,9 @@ function Contact() {
         <div className='flex justify-center items-center font-bold text-indigo-800'>
           <h1>Contact us</h1>
         </div>
-        <h1 className=' text-center text-xs px-2 pt-4'>Hurray! You have succesfully registered as a member of the Organization, Kindly send greetings to the any of the links below for confirmation.</h1>
-      
+        <h1 className=' text-center text-xs px-2 pt-4'>Cick on any of the following link below to contact us for more information.</h1>
       <div className='pt-[10px] '>
-        <a href='https://wa.me/+2349064028709'>
+        <a href='https://wa.me/8139116879'>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
           <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
           <h1>Whatsapp</h1>
