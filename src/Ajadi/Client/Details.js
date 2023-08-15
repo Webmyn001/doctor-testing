@@ -66,7 +66,7 @@ function Details() {
          <h1 className='pt-2 font-semibold '>Phone Number:</h1>
          <h1 className='px-2'>{data.PhoneNo}</h1>
 
-         <a href={`https://wa.me/${data.PhoneNo}`}>
+         <a href={`https://wa.me/$+234{data.PhoneNo}`}>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
           <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
           <h1>Whatsapp</h1>

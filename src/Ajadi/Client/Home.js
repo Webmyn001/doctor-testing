@@ -17,6 +17,10 @@ function Home() {
   const [PhoneNo, setPhoneNo] = useState("")
   const [Age, setAge] = useState("")
   const [Qualification, setQualification] = useState("")
+  const [WhatsappNo, setWhatsappNo] = useState("")
+  const [Sex, setSex] = useState("")
+
+
 
   const navigate = useNavigate()
    
@@ -24,6 +28,10 @@ function Home() {
    
   const OnchangeName =(e)=> {
     setName(e.target.value)
+  }
+
+  const OnchangeSex =(e)=> {
+    setSex(e.target.value)
   }
 
   const OnchangeOccupation =(e)=> {
@@ -66,6 +74,10 @@ function Home() {
     setQualification(e.target.value)
   }
 
+  const OnchangeWhatsapp =(e)=> {
+    setWhatsappNo(e.target.value)
+  }
+
   const Onchangeimages = async (e) => { 
     const files = Array.from(e.target.files)
     console.log(e.target.files.length)  
@@ -94,7 +106,7 @@ function Home() {
   const saveForm = async (e) => {
     e.preventDefault();
      axios.post("https://calm-pink-fossa-wear.cyclic.cloud/api/ajadi-form/add",{Name,Occupation,School,
-     Class, Image, Status,
+     Class, Image, Status,WhatsappNo,Sex,
      Address, Location, Email, PhoneNo, Age, Qualification})
     .then((res)=>
     { 
@@ -153,6 +165,8 @@ function Home() {
                      {/* drop down */}
                      <label for="status" className="font-semibold text-indigo-800 text-[14px]">Status :</label>
                 <select name="Status" onChange={OnchangeStatus} className=" text-indigo-800 focus:outline-0  px-3  " >
+                   
+                   <option value={false} className ="disabled:" >Select</option>
                     <option value="Single" className="">Single</option>
                     <option value="Married" className="">Married</option>
                     <option value="Divorced" className="">Divorced</option>
@@ -161,8 +175,6 @@ function Home() {
                 </select>
 
 
-  
-
 <input placeholder='Home Address'  value={Address} onChange={OnchangeAddress} required
         className='w-full border-b-[1px]  px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
 
@@ -170,11 +182,23 @@ function Home() {
         className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
 
 <input placeholder='Email Address'  value={Email} onChange={OnchangeEmail} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md mb-[20px] text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
+
+               <label for="Sex" className="font-semibold text-indigo-800 text-[14px]">Sex :</label>
+                <select name="Sex" onChange={OnchangeSex} className=" text-indigo-800 focus:outline-0  px-3  " >
+                   <option value={false} className ="disabled:" >Select</option>
+                    <option value="Male" className="">Male</option>
+                    <option value="Female" className="">Female</option>
+                    
+                </select>
 
 
-<input placeholder='Age'  value={Age} onChange={OnchangeAge} required
+<input placeholder='Age' type="Number"  value={Age} onChange={OnchangeAge} required
         className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-indigo-600 text-indigo-700 '/>
+
+<h3 className='text-xs pt-[25px] text-indigo-800 text-center'>Kindly include your country code e.g +2348139116879</h3>
+<input placeholder='Whatsapp Number e.g +2348139116879' type="Number" maxLength={14} value={WhatsappNo} onChange={OnchangeWhatsapp} required
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[10px] border-indigo-600 text-indigo-700 '/>
 
 
 <input placeholder='Phone Number' type="Number" value={PhoneNo} onChange={OnchangePhoneNo} required

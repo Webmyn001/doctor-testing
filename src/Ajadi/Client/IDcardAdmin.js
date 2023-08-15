@@ -18,7 +18,7 @@ function IDcardAdmin() {
         <div className='border-transparent border-[0.2px] 
         bg-gradient-to-r text-white from-indigo-800 to-cyan-600
        rounded-2xl shadow-xl shadow-indigo-800/50  w-[350px] pb-4'>
-            <h1 className='text-center rounded-xl'>Ajadi Muslim Youth Forum</h1>
+            <h1 className='text-center border-b border-white'>Ajadi Muslim Youth Forum</h1>
        
     
      
