@@ -146,21 +146,21 @@ function Home() {
   <form className='w-[280px] mt-[25px]' onSubmit={saveForm} encType="multipart/form-data">
             
     <input placeholder='Full Name'  value={Name} onChange={OnchangeName} required
-        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] rounded-md border-[#1a456e] '/>
+        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] rounded-md border-[#a4cb3c] '/>
 
     <input placeholder='Occupation'  value={Occupation} onChange={OnchangeOccupation} required
-        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] mt-[20px] rounded-md border-[#1a456e] '/>
+        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] mt-[20px] rounded-md border-[#a4cb3c] '/>
 
     <input placeholder='School'  value={School} onChange={OnchangeSchool} 
-        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] mt-[20px] rounded-md border-[#1a456e]'/>
+        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] mt-[20px] rounded-md border-[#a4cb3c]'/>
 
     <input placeholder='Class/Level'  value={Class} onChange={OnchangeClass} 
-        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] rounded-md mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] focus:outline-0 px-3 text-[14px] pb-[3.5px] rounded-md mt-[20px] border-[#a4cb3c] '/>
 
 
     <h3 className='text-xs pt-5 text-center'>Kindly upload your image below (Max 1mb)</h3>
    <input  type="file"  name='Image' onChange={Onchangeimages}
-         className='w-full border-b-[1px] focus:outline-0 px-3 rounded-md text-[14px] pb-[3.5px]  border-[#1a456e] mb-[20px] mt-[20px]' required/>
+         className='w-full border-b-[1px] focus:outline-0 px-3 rounded-md text-[14px] pb-[3.5px]  border-[#a4cb3c] mb-[20px] mt-[20px]' required/>
                     
                      {/* drop down */}
                      <label for="status" className="font-semibold text-[14px]">Status :</label>
@@ -176,13 +176,13 @@ function Home() {
 
 
 <input placeholder='Home Address'  value={Address} onChange={OnchangeAddress} required
-        className='w-full border-b-[1px]  px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px]  px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
 
 <input placeholder='Location'  value={Location} onChange={OnchangeLocation} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#1a456e]'/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c]'/>
 
 <input placeholder='Email Address'  value={Email} onChange={OnchangeEmail} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md mb-[20px] text-[14px] pb-[3.5px] mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md mb-[20px] text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
 
                <label for="Sex" className="font-semibold text-[14px]">Sex :</label>
                 <select name="Sex" onChange={OnchangeSex} className=" focus:outline-0  px-3  " >
@@ -194,18 +194,18 @@ function Home() {
 
 
 <input placeholder='Age' type="Number"  value={Age} onChange={OnchangeAge} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
 
 <h3 className='text-xs pt-[25px] text-center'>Kindly include your country code e.g +2348139116879</h3>
 <input placeholder='Whatsapp Number e.g +2348139116879'  maxLength={14} value={WhatsappNo} onChange={OnchangeWhatsapp} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[10px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[10px] border-[#a4cb3c] '/>
 
 
 <input placeholder='Phone Number' type="Number" value={PhoneNo} onChange={OnchangePhoneNo} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 text-[14px] rounded-md pb-[3.5px] mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 text-[14px] rounded-md pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
 
 <input placeholder='Qualification'  value={Qualification} onChange={OnchangeQualification} required
-        className='w-full border-b-[1px] rounded-md px-3 focus:outline-0 text-[14px] pb-[3.5px] mt-[20px] border-[#1a456e] '/>
+        className='w-full border-b-[1px] rounded-md px-3 focus:outline-0 text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
     
      {/* Upload button */}
      <div className='flex justify-center items-center mb-2'>
