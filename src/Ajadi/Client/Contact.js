@@ -17,14 +17,14 @@ function Contact() {
 
 
   return (
-    <div className='bg-[#f5f5f5]'>
-      <div className='p-4 text-center bg-white flex  items-center justify-center  h-[100px] rounded-b-full shadow-xl shadow-indigo-800/50'></div>
+    <div className='bg-[#f5f5f5] text-[#1a456e]'>
+      <div className='p-4 text-center bg-white flex mt-2  items-center justify-center  h-[100px] rounded-b-full shadow-xl shadow-indigo-800/50'></div>
     
     
-       <div className=' text-gray-900  flex justify-center font-josefins items-center w-full min-h-[500px]' data-aos="zoom-in">
+       <div className=' flex justify-center font-josefins items-center w-full min-h-[500px]' data-aos="zoom-in">
 
-         <div className=' rounded-lg w-[350px] sm:w-[450px] text-indigo-800 h-fit py-6  shadow-indigo-800/50 shadow-xl '>
-        <div className='flex justify-center items-center font-bold text-indigo-800'>
+         <div className=' rounded-lg w-[350px] sm:w-[450px]  h-fit py-6  shadow-indigo-800/50 shadow-xl '>
+        <div className='flex justify-center items-center font-bold '>
           <h1>Contact us</h1>
         </div>
         <h1 className=' text-center text-xs px-2 pt-4'>Cick on any of the following link below to contact us for more information.</h1>

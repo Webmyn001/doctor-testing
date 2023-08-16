@@ -16,12 +16,12 @@ import {FaBars,FaTimes} from "react-icons/fa"
         <div>
             
                      {/* large screen */}
-          <div className="bg-[#f5f5f5] flex px- text-indigo-800 h-[60px]">
+          <div className="bg-[#f5f5f5] flex px- text-[#1a456e] h-[60px]">
             {/* logo */}
             <div>
             <Link to="/"> 
               <div className="pl-4 pt-2">
-              <img src={image1} alt="logo" className="h-[55px] p-1 cursor-pointer rounded-lg"/>
+              <img src={image1} alt="logo" className="h-[55px] w-[55px] p-1 border border-[#1a456e] cursor-pointer rounded-lg"/>
                 </div>   
                </Link> 
              </div>
@@ -41,7 +41,7 @@ import {FaBars,FaTimes} from "react-icons/fa"
                   </ul>
            
                              {/* toggling icon */}
-                  <div className="z-50 md:hidden text-indigo-800 cursor-pointer pr-8 flex w-full justify-end items-center" 
+                  <div className="z-50 md:hidden text-[#1a456e] cursor-pointer pr-8 flex w-full justify-end items-center" 
                    onClick={handleClick}>
                     {open ? <FaTimes/> : <FaBars/>}
                   </div>

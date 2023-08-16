@@ -16,7 +16,7 @@ function App() {
 
  
   return (
-    <div className='font-josefins'>
+    <div className='font-josefins bg-[#f5f5f5]'>
        <Router>
             <Navbar/>
        

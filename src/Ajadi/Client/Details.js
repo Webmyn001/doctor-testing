@@ -26,9 +26,9 @@ function Details() {
     }
 
   return (
-    <div className='bg-[#f5f5f5]  text-gray-900 w-full min-h-screen'>
-    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-indigo-800 to-cyan-600 py-[2px]'>Full Details</h1>
-<div className='flex justify-center items-center py-10 text-indigo-800'>
+    <div className='bg-[#f5f5f5]  text-[#1a456e]   w-full min-h-screen'>
+    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e]  to-[#a4cb3c] mt-2 py-[2px]'>Full Details</h1>
+<div className='flex justify-center items-center py-10 '>
        <div className='bg-white w-[350px] pb-3  pt-3 rounded-2xl shadow-xl shadow-indigo-800/50 flex flex-col items-center justify-center h-fit'>
         <img src={data.Image[0].url} alt="#" className='w-[150px] h-[150px] rounded-full object-cover'/>
          <h1 className='pt-2 font-semibold '>Name: </h1>
@@ -49,6 +49,9 @@ function Details() {
 
          <h1 className='pt-2 font-semibold '>Status:</h1>
          <h1 className='px-2' >{data.Status}</h1>
+
+         <h1 className='pt-2 font-semibold '>Sex:</h1>
+         <h1 className='px-2' >{data.Sex}</h1>
 
          <h1 className='pt-2 font-semibold '>Home Address:</h1>
          <h1 className='px-2'>{data.Address}</h1>
@@ -78,9 +81,9 @@ function Details() {
                     {/* buttons */}
          <div className='flex justify-between w-full px-5  my-[15px]  mb-[15px] items-center'>
                <Link to={ {pathname:`/Idcard/${data.Name}`}}  state={data}>
-             <button className='p-[3px] bg-indigo-800 hover:text-indigo-800 text-white duration-300 transition-colors focus:outline-0 hover:border-[0.5px] border-indigo-800 hover:bg-white  rounded-lg'>ID Card</button>
+             <button className='p-[3px] bg-[#1a456e]  hover:text-[#1a456e]  text-white duration-300 transition-colors focus:outline-0 hover:border-[0.5px] border-[#1a456e]  hover:bg-white  rounded-lg'>ID Card</button>
                </Link>
-             <button onClick={()=>deleteUser(data._id)} className='p-[3px] bg-indigo-800 text-white duration-300 transition-colors focus:outline-0 hover:text-indigo-800 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
+             <button onClick={()=>deleteUser(data._id)} className='p-[3px] bg-[#1a456e]  text-white duration-300 transition-colors focus:outline-0 hover:text-[#1a456e]  hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
                </div>
        </div>
 </div>
